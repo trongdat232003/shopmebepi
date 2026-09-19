@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Giải Pháp Sức Khỏe Cho Bé - Shop Mẹ Bé Pi</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Be Vietnam Pro -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              teal: '#0a7c86',
+              tealDark: '#08636b',
+              tealLight: '#e6f4f5',
+              orange: '#f37021',
+              coral: '#f87171',
+              navy: '#0e2b40',
+              grayBg: '#f8fafc',
+            }
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for specific components -->
+<style data-purpose="custom-scroll-and-effects">
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .text-shadow-sm {
+      text-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-700 font-sans antialiased selection:bg-teal-100 selection:text-brand-teal" data-page="health_baby">
+<!-- Header chung -->
+<div id="header-placeholder"></div>
+<!-- BEGIN: Breadcrumb -->
+<div class="bg-slate-50 border-b border-slate-100 py-2.5">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xs text-slate-400 flex items-center space-x-2">
+<a class="hover:text-brand-teal" href="#">Trang chủ</a>
+<span>/</span>
+<span class="text-slate-600 font-medium">Giải pháp sức khỏe cho bé</span>
+</div>
+</div>
+<!-- END: Breadcrumb -->
+<!-- BEGIN: Floating Contact Toolbar -->
+<aside class="fixed right-3 bottom-24 z-50 flex flex-col items-center space-y-2.5 bg-slate-900/90 backdrop-blur-sm p-2 rounded-2xl shadow-xl text-white text-[10px] w-14">
+<div class="w-8 h-8 rounded-full overflow-hidden border border-teal-400 bg-white">
+<img alt="Mẹ Pi" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA8kPKZUfsY-_1X1X4OazogSgNDOioshOZiFdbPRo4p1sR_rlHNY-Sw-TjqFss5udRiiCya1BVCgpCiH2dyfvmt6-b6RNRGSVhx-o9b9Wx_q2jyLZkhllBhS2ELmvTYmNykX9tLfxTcPoZreuz6l6RAcl3l3mvCQN9qL-mdJSRTxEBunyjgglkHwvq3yG2z4GL2Mj5YQJnXAwOUH1utmv4xR1WylXqZJiPCRVW1_17g1EgTTd5A2w6Pg"/>
+</div>
+<span class="text-center font-bold text-[9px] text-teal-300 leading-tight">Tư vấn<br/>miễn phí</span>
+<button class="flex flex-col items-center hover:text-teal-300 transition-colors" title="Gọi ngay">
+<svg class="w-4 h-4 mb-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Gọi ngay</span>
+</button>
+<button class="flex flex-col items-center hover:text-teal-300 transition-colors" title="Nhắn tin">
+<svg class="w-4 h-4 mb-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Nhắn tin</span>
+</button>
+<button class="flex flex-col items-center hover:text-teal-300 transition-colors" title="Zalo">
+<span class="w-4 h-4 rounded-full bg-blue-500 font-extrabold text-[7px] flex items-center justify-center mb-0.5">Z</span>
+<span>Zalo</span>
+</button>
+<button class="flex flex-col items-center hover:text-teal-300 transition-colors" title="Messenger">
+<svg class="w-4 h-4 mb-0.5 text-sky-400" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.477 2 2 6.145 2 11.258c0 2.91 1.455 5.517 3.738 7.18V22l3.42-1.877c.91.252 1.87.387 2.842.387 5.523 0 10-4.145 10-9.252C22 6.145 17.523 2 12 2zm1.05 12.446l-2.67-2.85-5.21 2.85 5.73-6.082 2.74 2.85 5.14-2.85-5.73 6.082z"></path></svg>
+<span>Messenger</span>
+</button>
+</aside>
+<!-- END: Floating Contact Toolbar -->
+<main>
+<!-- BEGIN: HeroBanner -->
+<section class="relative bg-gradient-to-r from-teal-50/70 via-sky-50/50 to-amber-50/60 overflow-hidden py-10 md:py-14 border-b border-teal-100/60">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<!-- Content Left -->
+<div class="md:col-span-7 space-y-4">
+<h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-navy tracking-tight uppercase leading-tight">
+              GIẢI PHÁP SỨC KHỎE <br/><span class="text-brand-teal">CHO BÉ</span>
+</h1>
+<p class="text-slate-600 text-sm md:text-base font-medium">
+              Mỗi em bé có một nhu cầu khác nhau
+            </p>
+<p class="text-xs sm:text-sm text-slate-500 italic">
+              Chọn đúng vấn đề — Hiểu đúng nguyên nhân — Bổ sung đúng cách
+            </p>
+<div class="pt-2">
+<a class="inline-block bg-brand-teal hover:bg-brand-tealDark text-white text-xs sm:text-sm font-bold tracking-wider px-6 py-3 rounded-md shadow-md uppercase transition-all transform hover:-translate-y-0.5" href="#need-selection">
+                BẮT ĐẦU CHỌN GIẢI PHÁP
+              </a>
+</div>
+</div>
+<!-- Hero Image Right -->
+<div class="md:col-span-5 relative flex justify-center">
+<div class="relative w-full max-w-sm sm:max-w-md aspect-[4/3] rounded-3xl overflow-hidden shadow-lg border-4 border-white">
+<img alt="Mẹ và bé vui tươi khỏe mạnh" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXe_pquCeX3FIsRK9BK5GDXBvVWyJDsu-XFTGIuebwBm_bZeF8pnGdT2zDtoXKz3YKMEb0ZVVm1o0Ii0U4y4jJAPKp_kOTAWAt0LqqkBQkdxAXoW_RNaRPTHbj3s1um5KJEo6LmgL_3t72zCu2wva7Akx_4RJWPWORx05K6_JtkaQq9McpjRMex3a8V5yll0JBLwVogsVdFnVOxB_9iRzUuM5zQMEF04haXI4lg-Y2dw7D0Sl-Rsk7Ag"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroBanner -->
+<!-- BEGIN: NeedsSelection -->
+<section class="py-12 bg-white" id="need-selection">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-9">
+<h2 class="text-xl sm:text-2xl font-bold text-brand-navy">Bé đang cần hỗ trợ điều gì?</h2>
+</div>
+<!-- 5 Needs Categories -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 lg:gap-6 text-center">
+<!-- Item 1 (Selected/Active) -->
+<div class="flex flex-col items-center p-4 rounded-xl border-2 border-brand-teal bg-teal-50/40 shadow-sm hover:shadow-md transition-all cursor-pointer group">
+<div class="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center text-brand-teal mb-3 group-hover:scale-105 transition-transform">
+<!-- Stomach Icon -->
+<svg class="w-8 h-8 text-amber-500" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 class="text-xs sm:text-sm font-bold text-slate-800 leading-snug">Biếng ăn &amp;<br/>chậm hấp thu</h3>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col items-center p-4 rounded-xl border border-slate-200 bg-white hover:border-brand-teal hover:bg-slate-50 transition-all cursor-pointer group">
+<div class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 mb-3 group-hover:scale-105 transition-transform">
+<!-- Height measure icon -->
+<svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 class="text-xs sm:text-sm font-semibold text-slate-700 leading-snug">Tăng chiều cao</h3>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col items-center p-4 rounded-xl border border-slate-200 bg-white hover:border-brand-teal hover:bg-slate-50 transition-all cursor-pointer group">
+<div class="w-16 h-16 rounded-full bg-sky-50 flex items-center justify-center text-sky-500 mb-3 group-hover:scale-105 transition-transform">
+<!-- Shield Immunity -->
+<svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 class="text-xs sm:text-sm font-semibold text-slate-700 leading-snug">Tăng đề kháng</h3>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col items-center p-4 rounded-xl border border-slate-200 bg-white hover:border-brand-teal hover:bg-slate-50 transition-all cursor-pointer group">
+<div class="w-16 h-16 rounded-full bg-purple-50 flex items-center justify-center text-purple-500 mb-3 group-hover:scale-105 transition-transform">
+<!-- Speech & Mind -->
+<svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 class="text-xs sm:text-sm font-semibold text-slate-700 leading-snug">Chậm nói • ADHD • ASD</h3>
+</div>
+<!-- Item 5 -->
+<div class="flex flex-col items-center p-4 rounded-xl border border-slate-200 bg-white hover:border-brand-teal hover:bg-slate-50 transition-all cursor-pointer group col-span-2 sm:col-span-1">
+<div class="w-16 h-16 rounded-full bg-rose-50 flex items-center justify-center text-rose-500 mb-3 group-hover:scale-105 transition-transform">
+<!-- Brain icon -->
+<svg class="w-8 h-8 text-rose-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 class="text-xs sm:text-sm font-semibold text-slate-700 leading-snug">Phát triển trí não</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- END: NeedsSelection -->
+<!-- BEGIN: 3StepRoadmap -->
+<section class="py-10 bg-slate-50 border-y border-slate-100">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-8">
+<h2 class="text-xl sm:text-2xl font-bold uppercase tracking-wide text-brand-navy">LỘ TRÌNH 3 BƯỚC</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+<!-- Step 1 -->
+<div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start space-x-4">
+<div class="w-12 h-12 flex-shrink-0 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center text-brand-teal">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<h3 class="font-bold text-slate-800 text-sm">1. Chọn vấn đề</h3>
+<p class="text-xs text-slate-500 mt-1">Xác định vấn đề bé đang gặp phải</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start space-x-4">
+<div class="w-12 h-12 flex-shrink-0 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center text-brand-teal">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<h3 class="font-bold text-slate-800 text-sm">2. Xem giải pháp phù hợp</h3>
+<p class="text-xs text-slate-500 mt-1">Tham khảo nhóm giải pháp và combo được gợi ý</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start space-x-4">
+<div class="w-12 h-12 flex-shrink-0 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center text-brand-teal">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<h3 class="font-bold text-slate-800 text-sm">3. Nhận tư vấn cá nhân</h3>
+<p class="text-xs text-slate-500 mt-1">Nhận tư vấn từ chuyên gia để xây dựng kế hoạch phù hợp</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: 3StepRoadmap -->
+<!-- BEGIN: FeaturedSolution -->
+<section class="py-14 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-10">
+<h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy uppercase">GIẢI PHÁP NỔI BẬT</h2>
+</div>
+<div class="bg-gradient-to-br from-amber-50/40 via-white to-orange-50/30 border border-amber-100/80 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left: Symptoms -->
+<div class="lg:col-span-4 space-y-6">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-orange-500 flex-shrink-0">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-xl font-bold text-slate-900 leading-snug">
+                  Bé biếng ăn &amp;<br/>chậm hấp thu
+                </h3>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Dấu hiệu thường gặp</p>
+<ul class="space-y-2.5 text-sm text-slate-700">
+<li class="flex items-start gap-2">
+<svg class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<span>Ăn ít, ngậm lâu</span>
+</li>
+<li class="flex items-start gap-2">
+<svg class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<span>Chậm tăng cân</span>
+</li>
+<li class="flex items-start gap-2">
+<svg class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<span>Hay đầy bụng, rối loạn tiêu hóa</span>
+</li>
+<li class="flex items-start gap-2">
+<svg class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<span>Kén ăn kéo dài</span>
+</li>
+</ul>
+</div>
+<a class="inline-block bg-brand-teal hover:bg-brand-tealDark text-white text-xs font-bold uppercase tracking-wide px-5 py-3 rounded-md shadow transition-colors" href="#">
+                XEM LỘ TRÌNH CHI TIẾT
+              </a>
+</div>
+<!-- Center: Baby Eating Image -->
+<div class="lg:col-span-4 flex justify-center">
+<div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-white shadow-md">
+<img alt="Bé ăn ngoan" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPQvLjah1ndip54MTzhuM8n9U0nCVNGamjjbmxztZm9L9FH58Ov5P3dOGo-jbT6_p1R_zqoL1CFHnKTUd6hDWGyYlfqa8mjDF6Z2kN2FtDQZU64I75arCZ5yhJAupaqk7A4OTvLDVZ5CoSdApYzWe-xQp05YjneA-UkxYSWQL3HQFbtsYmioua6_Nnt_3u9VnT8yuG4ucWPPkN5da2mXybxitluGhPZb1ilEwkNYFQJiPMfk5DlyACKg"/>
+</div>
+</div>
+<!-- Right: Recommended Solution Groups -->
+<div class="lg:col-span-4 space-y-3">
+<p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Nhóm giải pháp nên ưu tiên</p>
+<!-- Option 1 -->
+<div class="flex items-center justify-between p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-xs hover:border-brand-teal transition-all cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-orange-50 flex items-center justify-center text-orange-500 flex-shrink-0">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<h4 class="text-xs font-bold text-slate-800">Hỗ trợ tiêu hóa</h4>
+<p class="text-[11px] text-slate-400">Cân bằng hệ vi sinh, cải thiện hấp thu</p>
+</div>
+</div>
+<svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<!-- Option 2 -->
+<div class="flex items-center justify-between p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-xs hover:border-brand-teal transition-all cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-purple-50 flex items-center justify-center text-purple-500 flex-shrink-0">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<h4 class="text-xs font-bold text-slate-800">Bổ sung vi chất thiếu hụt</h4>
+<p class="text-[11px] text-slate-400">Kẽm, Lysine, Vitamin nhóm B, D3, Canxi...</p>
+</div>
+</div>
+<svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<!-- Option 3 -->
+<div class="flex items-center justify-between p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-xs hover:border-brand-teal transition-all cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-500 flex-shrink-0">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<h4 class="text-xs font-bold text-slate-800">Xây dựng lịch ăn</h4>
+<p class="text-[11px] text-slate-400">Thiết lập thói quen ăn uống khoa học</p>
+</div>
+</div>
+<svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<!-- Option 4 -->
+<div class="flex items-center justify-between p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-xs hover:border-brand-teal transition-all cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-sky-50 flex items-center justify-center text-sky-500 flex-shrink-0">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<h4 class="text-xs font-bold text-slate-800">Tư vấn theo tình trạng của bé</h4>
+<p class="text-[11px] text-slate-400">Chuyên gia đồng hành 1:1</p>
+</div>
+</div>
+<svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FeaturedSolution -->
+<!-- BEGIN: SuggestedProducts -->
+<section class="py-14 bg-slate-50/60">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-8">
+<h2 class="text-2xl font-bold text-brand-navy uppercase tracking-wide">SẢN PHẨM GỢI Ý</h2>
+<p class="text-xs sm:text-sm text-slate-500 mt-1">Sản phẩm được chọn theo từng nhu cầu</p>
+</div>
+<!-- Product Cards Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+<!-- Product 1 -->
+<div class="bg-white rounded-xl border border-slate-200 p-3.5 flex flex-col justify-between hover:shadow-md transition-shadow relative">
+<button class="absolute top-2.5 right-2.5 text-slate-300 hover:text-rose-500 transition-colors" title="Thêm vào yêu thích">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="w-full aspect-square mb-3 flex items-center justify-center p-2">
+<img alt="Bio-acimin Gold" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr-L5aeIO4HDgy8a9p4HNx6hGp3PS-3TWpuAWcWnSfgZKmt_dQKkQ53GV7ZL1jc0fd2Ba6oVe8f0KAixCttmUH7nAkN7YymCIZEQ-KOJJwgsj59xICwN3M0tmCKmuytWXwdt4UAd71VcFg1kXtDR_Zbv9v0sh34gHe2mdRN5VCRD1EDoTATneFIkd4rNgm4Jq6LaFWMoaJJZkew4OzKpo5-hfo3EwMCHvPqsoPAAeB7DvtaxslMQXVBQ"/>
+</div>
+<div>
+<h3 class="text-xs font-bold text-slate-800 line-clamp-1">Bio-acimin Gold</h3>
+<p class="text-[11px] text-slate-500 line-clamp-1 mt-0.5">Hỗ trợ tiêu hóa, tăng hấp thu</p>
+<div class="flex items-center text-amber-400 text-xs mt-1.5 space-x-1">
+<span>★★★★★</span>
+<span class="text-slate-400 text-[10px]">(128)</span>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-white rounded-xl border border-slate-200 p-3.5 flex flex-col justify-between hover:shadow-md transition-shadow relative">
+<button class="absolute top-2.5 right-2.5 text-slate-300 hover:text-rose-500 transition-colors" title="Thêm vào yêu thích">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="w-full aspect-square mb-3 flex items-center justify-center p-2">
+<img alt="Zinc Gluconate" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALM0Nktve8CAozriO8drIiMTCGyyWi8VY6B8k4-NuVW3LNiRQWxCG8hS13b5g0_8kWwIFa7HM-aYd2ZxYGC0iKUYY23ZDSUd5Q3fHFA93uMls5N5V-IK_zsLLoUozL2uMJ693Zfqa-MNwPbSAnh9zdUdnB-xfdrQDpGVc5_xMaPfufep3zmPotR9O39evvjxm7fbXP78FZsQUcAl_hxTGmdMf5agDjUAxIjHVwkNZM3tW_Go7revm-pg"/>
+</div>
+<div>
+<h3 class="text-xs font-bold text-slate-800 line-clamp-1">Zinc Gluconate</h3>
+<p class="text-[11px] text-slate-500 line-clamp-1 mt-0.5">Bổ sung kẽm cho bé</p>
+<div class="flex items-center text-amber-400 text-xs mt-1.5 space-x-1">
+<span>★★★★★</span>
+<span class="text-slate-400 text-[10px]">(97)</span>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-white rounded-xl border border-slate-200 p-3.5 flex flex-col justify-between hover:shadow-md transition-shadow relative">
+<button class="absolute top-2.5 right-2.5 text-slate-300 hover:text-rose-500 transition-colors" title="Thêm vào yêu thích">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="w-full aspect-square mb-3 flex items-center justify-center p-2">
+<img alt="Lysine" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyid-7cRTjEyBIkMxC6UYziuhqkPATbzaaSQd_QQEAchW15cVlrNB2PHcAqUSBqVGEcu7ldwlkJYkb4eDiM7-JDTWrTrGOiABk_qHsIObdMxtIyJpo6IGF-yv_iS3nVpIVRUvPwYsU8SvZ7scz0Tuzj1uANTjXKQjYp4595hY7T12lNCekPCHq3_EkdGumL59HNPzErPZnxvE6OXuoH4NwNIQrLHvwQ6eN2-uK30s_tlowmdxXVZrrNw"/>
+</div>
+<div>
+<h3 class="text-xs font-bold text-slate-800 line-clamp-1">Lysine</h3>
+<p class="text-[11px] text-slate-500 line-clamp-1 mt-0.5">Hỗ trợ ăn ngon</p>
+<div class="flex items-center text-amber-400 text-xs mt-1.5 space-x-1">
+<span>★★★★★</span>
+<span class="text-slate-400 text-[10px]">(86)</span>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-white rounded-xl border border-slate-200 p-3.5 flex flex-col justify-between hover:shadow-md transition-shadow relative">
+<button class="absolute top-2.5 right-2.5 text-slate-300 hover:text-rose-500 transition-colors" title="Thêm vào yêu thích">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="w-full aspect-square mb-3 flex items-center justify-center p-2">
+<img alt="Appetito" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOt65_H9yINZZictfG0AfDEdzbRQzzjCYsxDbF5mj1MLmbzyT-EYARArexYXvbtUAvSjEEJoqYQ0ZuMCmWqN8umTvXHlSlMnyCS0czCL1ch3kcEM7ChmHM8rXMT0pXW2kmoooJY5Oqii4DDJ1bednOpbZEa8UtXrZP_oZm_UenSu2Bh_rIxb7aXOWK__PobWIL5aZ5ILOPLQlpLZXOorKQsz2_EvtUos8WhLiiUIKCU_6WEPR01iKNYw"/>
+</div>
+<div>
+<h3 class="text-xs font-bold text-slate-800 line-clamp-1">Appetito</h3>
+<p class="text-[11px] text-slate-500 line-clamp-1 mt-0.5">Hỗ trợ bé ăn ngon</p>
+<div class="flex items-center text-amber-400 text-xs mt-1.5 space-x-1">
+<span>★★★★★</span>
+<span class="text-slate-400 text-[10px]">(75)</span>
+</div>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="bg-white rounded-xl border border-slate-200 p-3.5 flex flex-col justify-between hover:shadow-md transition-shadow relative">
+<button class="absolute top-2.5 right-2.5 text-slate-300 hover:text-rose-500 transition-colors" title="Thêm vào yêu thích">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="w-full aspect-square mb-3 flex items-center justify-center p-2">
+<img alt="Immunace Kid" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4-jdOm48ZBer4NBisW9Jn2xKCZdFw8rdqE32s-OJYReY6epjgi8KzZ4cXUYNFjUAXmeKKmeG2RPBlm9bv1joCeN5V6HEkb1VcM0TFmnpbYD_J6SCyCOYxY0NHpH4yx0ewuFsjZ4E1xUh1hWSmAXFa14MOOhNKFFPdH1EoiPqowwzJfWaXLG4p_rkdCxE2rJc9WN0PUWh5r6BI2-yo5yJyqbdNdOJBMg5-XD5kYUGJJvXy7ly62m4FAg"/>
+</div>
+<div>
+<h3 class="text-xs font-bold text-slate-800 line-clamp-1">Immunace Kid</h3>
+<p class="text-[11px] text-slate-500 line-clamp-1 mt-0.5">Hỗ trợ tăng đề kháng</p>
+<div class="flex items-center text-amber-400 text-xs mt-1.5 space-x-1">
+<span>★★★★★</span>
+<span class="text-slate-400 text-[10px]">(132)</span>
+</div>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="bg-white rounded-xl border border-slate-200 p-3.5 flex flex-col justify-between hover:shadow-md transition-shadow relative">
+<button class="absolute top-2.5 right-2.5 text-slate-300 hover:text-rose-500 transition-colors" title="Thêm vào yêu thích">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="w-full aspect-square mb-3 flex items-center justify-center p-2">
+<img alt="Vitamin D3" class="max-h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIhIayKQFD09jzA1NbvQY4DC_9Q685-Db8DPP4pRXeXJzov0Pu_UcCC3eezk6_D_6kqEKxHlzjm4LWQF8azRo4NM_vcIZ4p51iUW1txXSRMJXNi23Ai7S_xqXjrgpSWN0mJNcPpepyZ83T-3LNp9NXxQ4g6zisbHw15mQaN8PRCGEgGRCM-sNgoyJt7bLpBH94iAbUZZXZU-TuCMZydZdwfA13hB_U60lcz1GEXLlnst3HRHlbLfZ7bA"/>
+</div>
+<div>
+<h3 class="text-xs font-bold text-slate-800 line-clamp-1">Vitamin D3</h3>
+<p class="text-[11px] text-slate-500 line-clamp-1 mt-0.5">Hỗ trợ hấp thu canxi</p>
+<div class="flex items-center text-amber-400 text-xs mt-1.5 space-x-1">
+<span>★★★★★</span>
+<span class="text-slate-400 text-[10px]">(119)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SuggestedProducts -->
+<!-- BEGIN: SuggestedCombos -->
+<section class="py-14 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-10">
+<h2 class="text-2xl font-bold text-brand-navy uppercase tracking-wide">COMBO GỢI Ý</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Combo 1 -->
+<div class="bg-white rounded-2xl border border-slate-200 p-5 flex flex-col justify-between hover:shadow-lg transition-shadow">
+<div>
+<!-- Combo Images representation -->
+<div class="bg-slate-50 rounded-xl p-4 flex items-center justify-center space-x-2 h-44 mb-4">
+<img alt="Bio Acimin" class="h-24 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBboPjPFH0tv6Ra3luE8KbiJjV4SVmcM44pslw_cOTTWpodb1GPdm5a1EsTEPK3cW628ZBC3yegwAxswWJ_tncoB5Rk0aL_Ukb9rm3x9fj0zAiPPrdHcoIuvNEB9yKkQ3pIxdU0D6fxFSo-am3HRJYuYpgdkexwIxlaoFH-OpFs21f8qiLwrnVZCymtU9F7Vo8lvV-x98j64hm7TZ-ON25jZxJGvKP2AYvy5tIZaAt2ZJk5fxkMqdbxuA"/>
+<img alt="Zinc" class="h-24 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2DDZ_8guySAO7r7S-aUd3QpnoXFvGu9H9bLDX46Rfg_4ltfB_3IA7Z7t-u6PoOM6hfbAYUtgN7ZM1yLBm76isb7WAAHcZbpKbbe45mAS2YywvullZ6lmjiUsv3N5KIYMRIKnTGOffGGfuYf6AQ9MS9WOVOpF6mnnlmgKsPjx_wiLdqbVFxtew4GLkOlSe16ogxioDgOZcPm0g-Aff__r4LWFLde5uJ79SRAIJ_92kybaj5AKtkNr9IA"/>
+<img alt="Lysine" class="h-24 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBErwQ-K9437aIHSWuoy-w3FytOBLUhDJVVO4EKVw8ZJsrxTzNaqSLAJhSLkrOQecjHrdmxq7IHvfGKW_HaKDy0PupScza9x-ZRD1KWYfaEnCIo4vxeoRj-6iJ-Fqtqw1v_fnGEPU1VHNqUlxifdEB7lT4eiyFeJDXce-VluMGaVJU4zMSecfOF-voz7EhnRwpgQpEeHILLbNj3VA3ksMAYOtJCwIjjSJCY1s68TuRf2W3jci-EVCbjpQ"/>
+</div>
+<h3 class="text-base font-bold text-slate-900">Combo Tiêu hóa khỏe</h3>
+<p class="text-xs font-bold text-slate-500 mt-2 mb-2">Vì sao phù hợp?</p>
+<ul class="space-y-1.5 text-xs text-slate-600">
+<li class="flex items-start gap-1.5">
+<span class="text-emerald-500 font-bold">✓</span>
+<span>Hỗ trợ hệ tiêu hóa khỏe mạnh</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="text-emerald-500 font-bold">✓</span>
+<span>Giảm đầy bụng, khó tiêu</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="text-emerald-500 font-bold">✓</span>
+<span>Hấp thu tốt hơn</span>
+</li>
+</ul>
+</div>
+<div class="mt-6 flex items-center gap-2 pt-4 border-t border-slate-100">
+<a class="flex-1 text-center py-2.5 px-3 border border-slate-300 text-xs font-bold text-slate-700 rounded-lg hover:border-brand-teal hover:text-brand-teal transition-colors uppercase" href="#">
+                XEM CHI TIẾT
+              </a>
+<button class="w-10 h-10 rounded-lg bg-brand-teal text-white flex items-center justify-center hover:bg-brand-tealDark transition-colors flex-shrink-0" title="Thêm vào giỏ">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+<!-- Combo 2 -->
+<div class="bg-white rounded-2xl border border-slate-200 p-5 flex flex-col justify-between hover:shadow-lg transition-shadow">
+<div>
+<div class="bg-slate-50 rounded-xl p-4 flex items-center justify-center space-x-2 h-44 mb-4">
+<img alt="Appetito" class="h-24 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVxykONlnw8j2bBC62vGnrIyhIOzJ50wqg-6-O8WR2jCzpYgJgH450eSOS1roS5UWsQLcBEb6qhre2t1wwuot6jKhsJuWwbI8PcApxolQxqw6ttBHfG_77ofYtHinajiqdKYis2N735j-EAhsdemPTyepCTbPh0oD_N1RXXHqiPWXznDzE-anmZsChLhTBkYUnGEpcGeR0kDC6F3_XqEaoT0CyzPT1BC4-kfPFEDqeduQxXYscNkaXqA"/>
+<img alt="Zinc" class="h-24 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKQonzxIVt2Wmar_TQsYJuTzQduWhI9WMj3TASxrdjK3ax_8b32I4T0f7Ijgqev8yCMO3M7PXmL6f5zyBGYg5B8V7PM_zNoT7OUtue24joMSv4IpsLvkclO1mT6_PVCTBRSSIOnOE1MLK7wP1Je0oKhlBJqqJ4YOHsyNBwiqFLUKTxpvEw-VYjudJiVN4nMft-QFXmcl9C12yCCsHgBhcYpGOTfuEKx3QEBB_SunXJTtpUMRR42wrf4w"/>
+<img alt="Lysine" class="h-24 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoR1eHAm3pRSdDh8LV2qk_ySI6t67Nhu-hNzOYxZEtKoELUi3KE35JfZOtZ2X4wDq9erwTcvkvSG-9CF5dL4WkrcawVMBZzXZOrre0zvob8Z4cQe0A2Wp-EwOM0vbdjwn8ChYUBirLyuDWeWk0EiwEItghK7hrjan1oMDAfgMMDPE3NAI7csZRhD1NJavA1JYWVs7Fpq9RQZTc8zFw7tZJ6w9m-9-Qc8cPb-exTeuFXSuypCDOWKloAg"/>
+</div>
+<h3 class="text-base font-bold text-slate-900">Combo Ăn ngon đúng cách</h3>
+<p class="text-xs font-bold text-slate-500 mt-2 mb-2">Vì sao phù hợp?</p>
+<ul class="space-y-1.5 text-xs text-slate-600">
+<li class="flex items-start gap-1.5">
+<span class="text-emerald-500 font-bold">✓</span>
+<span>Kích thích vị giác, giúp bé ăn ngon</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="text-emerald-500 font-bold">✓</span>
+<span>Bổ sung Lysine &amp; kẽm</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="text-emerald-500 font-bold">✓</span>
+<span>Hỗ trợ tăng cân lành mạnh</span>
+</li>
+</ul>
+</div>
+<div class="mt-6 flex items-center gap-2 pt-4 border-t border-slate-100">
+<a class="flex-1 text-center py-2.5 px-3 border border-slate-300 text-xs font-bold text-slate-700 rounded-lg hover:border-brand-teal hover:text-brand-teal transition-colors uppercase" href="#">
+                XEM CHI TIẾT
+              </a>
+<button class="w-10 h-10 rounded-lg bg-brand-orange text-white flex items-center justify-center hover:bg-orange-600 transition-colors flex-shrink-0" title="Thêm vào giỏ">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+<!-- Combo 3 -->
+<div class="bg-white rounded-2xl border border-slate-200 p-5 flex flex-col justify-between hover:shadow-lg transition-shadow">
+<div>
+<div class="bg-slate-50 rounded-xl p-4 flex items-center justify-center space-x-2 h-44 mb-4">
+<img alt="Immunace" class="h-24 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC103SHz0Rw7x5QFFhWs4rAXDXBeftoFcVL3BtYU1oeF6bhBtdziyprZ1IBZK2X6qXtTSwDSUJnC2j04d6FvzzMySgZo1TOkipsyWNK9Z-OVOSpK9sUEEG9LOZ6UOwP_CvFRxG0unVVqtfRlLrohyktxlhhs6uestI-bby4MIacfI4ZeaJFkw861uTpIbta6WIqAIXLROTuW9JxdcXhCM9_SMQCVW-dOmRHcibcgCkteWf6h-MfRh64_A"/>
+<img alt="VitD3" class="h-24 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL5XJefyFFsnN3mJ3okdzt7Pt_Gsu0TGJi3P5VMvAurboYH-EbYgbtUK0maSmca3Tpu-zrEz4xq-VU1_au2kIK21G8hEe9zWuQgFdY2WGFIjugvQWhWv_NOTW30bi-Szm9j1Nq9OU7yr2kXLA4AlUdLWqs3ol4ZFNIEcFmDFwsmRhW7hy9cC6LvnpYRYfJsk3B5PG74ggwBIR9KFIeyq7GtwSCzZ5IX2tvk_g3wZrZv_sbeoQA7p6y0A"/>
+<img alt="Zinc" class="h-24 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy7E_gT1LtftEoIR-XfS91XgB6VoLNjGWFHuOX1LXDApU1S3hUwYNCwbuzfzrjzuiw4E9Q3GGeM2xCW2WSqzM6P9xjDQE6rupC4gry666GOCr7dVmMtSHMYbauP33oV3T7ruPO0yZylkX2rQlFD-13_2R4gq6vCiKF5e3M8xcO6RJDs4J9G28pMA3H0kOCtT83_A2mg4KgdW32Xb_xvPyNNGC4iIb511RpJAUjK5CPnD8-qreW6neUfQ"/>
+</div>
+<h3 class="text-base font-bold text-slate-900">Combo Đề kháng cho bé</h3>
+<p class="text-xs font-bold text-slate-500 mt-2 mb-2">Vì sao phù hợp?</p>
+<ul class="space-y-1.5 text-xs text-slate-600">
+<li class="flex items-start gap-1.5">
+<span class="text-emerald-500 font-bold">✓</span>
+<span>Tăng sức đề kháng tự nhiên</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="text-emerald-500 font-bold">✓</span>
+<span>Giảm ốm vặt, hỗ trợ phục hồi</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="text-emerald-500 font-bold">✓</span>
+<span>Phát triển khỏe mạnh mỗi ngày</span>
+</li>
+</ul>
+</div>
+<div class="mt-6 flex items-center gap-2 pt-4 border-t border-slate-100">
+<a class="flex-1 text-center py-2.5 px-3 border border-slate-300 text-xs font-bold text-slate-700 rounded-lg hover:border-brand-teal hover:text-brand-teal transition-colors uppercase" href="#">
+                XEM CHI TIẾT
+              </a>
+<button class="w-10 h-10 rounded-lg bg-brand-teal text-white flex items-center justify-center hover:bg-brand-tealDark transition-colors flex-shrink-0" title="Thêm vào giỏ">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+</div>
+<!-- Medical Disclaimer -->
+<div class="mt-8 text-center bg-amber-50/70 border border-amber-200/60 rounded-xl p-3 max-w-2xl mx-auto">
+<p class="text-[11px] sm:text-xs text-amber-800 font-medium flex items-center justify-center gap-1.5">
+<svg class="w-4 h-4 text-amber-600 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+            Không tự ý dùng nếu bé đang điều trị bệnh. Nội dung không thay thế chẩn đoán của bác sĩ.
+          </p>
+</div>
+</div>
+</section>
+<!-- END: SuggestedCombos -->
+<!-- BEGIN: MotherKnowledgeAndConsult -->
+<section class="py-12 bg-slate-50 border-t border-slate-200/60">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Knowledge Articles (7 cols) -->
+<div class="lg:col-span-7">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-xl font-bold text-brand-navy uppercase">KIẾN THỨC CHO MẸ</h2>
+<a class="text-xs font-semibold text-brand-teal hover:underline" href="#">Xem tất cả</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<!-- Article 1 -->
+<article class="bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-md transition-shadow">
+<div class="aspect-[4/3] w-full overflow-hidden bg-slate-100">
+<img alt="7 cách giúp bé ăn ngon" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6fMiNDQUn2_uO8lA7J2w39Ss74ECXDUPZ0Ubn7FkgEufxDkdswEIFlFC1JFEh0-XX00b7GOssjAE3mboit887rnhS4SClZUL8NhAp22r6dKd72qmYg8_sg6tMw9hw_UZ0kxIQHrwlRC8FjpxtEtDr6ysR_vYqxSIw8zGyypL6Ggdn714xyQApd90TvUERayE-hH2NAMJDFByJRAIGgzFHBBxgWzNOZd5tvZmV0cnwY0DTwJ-Qd0l73w"/>
+</div>
+<div class="p-3">
+<h3 class="text-xs font-bold text-slate-800 line-clamp-2 hover:text-brand-teal transition-colors">
+                    7 cách giúp bé ăn ngon mẹ nên áp dụng mỗi ngày
+                  </h3>
+<div class="flex items-center justify-between text-[10px] text-slate-400 mt-3 pt-2 border-t border-slate-100">
+<span class="text-brand-teal font-semibold">Dinh dưỡng</span>
+<span>12/05/2024</span>
+</div>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-md transition-shadow">
+<div class="aspect-[4/3] w-full overflow-hidden bg-slate-100">
+<img alt="Hệ tiêu hóa của bé" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmLAozzfLto01opqsPde2elzy-42nCGUjOgYuxvoiOm6vLx8LubPvisfB693ropFLO3B-ytEmGX6WouTq5zzqqiG577ldP9BjHVLZLCO4kwWSfD_X8lMs3Rj-PGZnt_UJUkS9KC_B6o218zEpVfO8mjDcfJ71XEPp2g_5N5TRz0vDJzhb4Gga0NvwuBy7Dvlb5m3t68mycetbIVSNPqFE3guPx12SUf6-JuWJqsHI69Ok3qv4LOrblPg"/>
+</div>
+<div class="p-3">
+<h3 class="text-xs font-bold text-slate-800 line-clamp-2 hover:text-brand-teal transition-colors">
+                    Hệ tiêu hóa của bé: Những điều mẹ cần biết
+                  </h3>
+<div class="flex items-center justify-between text-[10px] text-slate-400 mt-3 pt-2 border-t border-slate-100">
+<span class="text-brand-teal font-semibold">Dinh dưỡng</span>
+<span>08/05/2024</span>
+</div>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-md transition-shadow">
+<div class="aspect-[4/3] w-full overflow-hidden bg-slate-100">
+<img alt="Chiều cao của bé" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdN36zCAkb0xsfK17XgJW1KOuE6Ha9rBf0aSKSs8Qnpt9SgjiEPUERMQF9R72gN7JUvqb0_OhgKuhUT7lSCltG6JhhzEl8vcj-lmArfQHBAb9kHEwix4U5ck6E4eL4SS9gfyQx3zFuOZcZMEoF4ENacT7mYENuvIjwzIrR-N9T_vTdYKgztC0qczYI0I-tKKwvU4xK-U4d9xeF_DgFkRvRCGrb9E_KOELyfZZ3JPS_LMiiCt7FHjsLXQ"/>
+</div>
+<div class="p-3">
+<h3 class="text-xs font-bold text-slate-800 line-clamp-2 hover:text-brand-teal transition-colors">
+                    Chiều cao của bé phụ thuộc vào những yếu tố nào?
+                  </h3>
+<div class="flex items-center justify-between text-[10px] text-slate-400 mt-3 pt-2 border-t border-slate-100">
+<span class="text-brand-teal font-semibold">Phát triển</span>
+<span>05/05/2024</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+<!-- Consult Banner (5 cols) -->
+<div class="lg:col-span-5 bg-gradient-to-br from-teal-50 via-sky-50 to-blue-50 border border-teal-200/80 rounded-2xl p-6 relative overflow-hidden shadow-sm" id="consult-section">
+<div class="flex flex-col sm:flex-row items-center gap-5">
+<div class="flex-1 space-y-3">
+<span class="text-[11px] font-extrabold uppercase tracking-wider text-brand-teal">LIÊN HỆ TƯ VẤN</span>
+<h3 class="text-xl font-extrabold text-brand-navy">Chưa chắc bé cần gì?</h3>
+<p class="text-xs text-slate-600 leading-relaxed">
+                  Mẹ Pi giúp mẹ sàng lọc nhu cầu trước khi lựa chọn sản phẩm.
+                </p>
+<div class="pt-2">
+<a class="inline-block bg-brand-teal hover:bg-brand-tealDark text-white text-xs font-bold uppercase tracking-wide px-5 py-3 rounded-lg shadow-md transition-all" href="#">
+                    NHẬN TƯ VẤN MIỄN PHÍ
+                  </a>
+</div>
+</div>
+<div class="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden border-2 border-white shadow-md flex-shrink-0">
+<img alt="Mẹ Pi tư vấn" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGag1kVUnirwlgGzHnI_xSiVrP1ifPHKMut2JAPDnMT7WRx5p3tk5s7xzYSIZNR01nfXuIZy_yzgtbl_4HH2qSFOgE9FX7Qnkndcr-nbZJgYcEZYLa3tILH6emycNy5fYX-0_JrlzYbemsz_AquHH-SZwWcKH5pZSEYdDQYvDg4ED2TykfjpmlzKdfrPqZDJ2DemYSVWzIOzup5sPORnhY3_53cZAnOHY2VtjDqWdhSQIKlYnf82TG4Q"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: MotherKnowledgeAndConsult -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-brand-navy text-slate-300 text-xs pt-12 pb-8 border-t border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-slate-700/60">
+<!-- Col 1: Shop Intro -->
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-rose-500 flex items-center justify-center text-white">
+<svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+</div>
+<span class="font-extrabold text-white text-sm tracking-wide uppercase">SHOP MẸ BÉ PI</span>
+</div>
+<p class="text-slate-400 text-xs leading-relaxed">
+            Đồng hành cùng mẹ chăm sóc bé yêu khỏe mạnh, phát triển toàn diện.
+          </p>
+<div class="pt-1">
+<span class="block text-slate-400 mb-2 font-medium">Kết nối với chúng tôi</span>
+<div class="flex space-x-2.5">
+<a class="w-7 h-7 rounded-full bg-slate-800 hover:bg-brand-teal flex items-center justify-center text-white transition-colors" href="#" title="Tiktok">♪</a>
+<a class="w-7 h-7 rounded-full bg-slate-800 hover:bg-brand-teal flex items-center justify-center text-white transition-colors" href="#" title="Facebook">f</a>
+<a class="w-7 h-7 rounded-full bg-slate-800 hover:bg-brand-teal flex items-center justify-center text-white transition-colors" href="#" title="Instagram">in</a>
+<a class="w-7 h-7 rounded-full bg-slate-800 hover:bg-brand-teal flex items-center justify-center text-white transition-colors" href="#" title="Youtube">▶</a>
+</div>
+</div>
+</div>
+<!-- Col 2: About Us -->
+<div class="space-y-2.5">
+<h3 class="text-white font-bold text-xs uppercase tracking-wider mb-3">VỀ SHOP MẸ BÉ PI</h3>
+<ul class="space-y-2 text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Giới thiệu</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Cam kết của chúng tôi</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Chính sách đổi trả</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Chính sách bảo mật</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Tuyển dụng</a></li>
+</ul>
+</div>
+<!-- Col 3: Customer Support -->
+<div class="space-y-2.5">
+<h3 class="text-white font-bold text-xs uppercase tracking-wider mb-3">HỖ TRỢ KHÁCH HÀNG</h3>
+<ul class="space-y-2 text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Hướng dẫn mua hàng</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Hướng dẫn thanh toán</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Chính sách giao hàng</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Câu hỏi thường gặp</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Liên hệ</a></li>
+</ul>
+</div>
+<!-- Col 4: Contact Info & Badges -->
+<div class="space-y-3">
+<h3 class="text-white font-bold text-xs uppercase tracking-wider mb-3">THÔNG TIN LIÊN HỆ</h3>
+<ul class="space-y-2 text-slate-400">
+<li class="flex items-center gap-2">
+<svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Tư vấn dinh dưỡng: <strong>0988 663 035</strong></span>
+</li>
+<li class="flex items-center gap-2">
+<svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Email: cskh@shopmebepi.vn</span>
+</li>
+<li class="flex items-center gap-2">
+<svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Thời gian: 8:00 - 20:00 (T2 - CN)</span>
+</li>
+<li class="flex items-center gap-2">
+<svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>Hệ thống cửa hàng</span>
+</li>
+</ul>
+<!-- Certifications badges -->
+<div class="flex items-center space-x-3 pt-2">
+<div class="px-2.5 py-1 border border-slate-600 rounded text-[9px] text-slate-300 font-bold uppercase tracking-wider flex items-center gap-1">
+<span>ĐÃ THÔNG BÁO BỘ CÔNG THƯƠNG</span>
+</div>
+<div class="px-2.5 py-1 bg-blue-900 border border-blue-700 rounded text-[9px] text-blue-200 font-bold uppercase">
+              DMCA PROTECTED
+            </div>
+</div>
+</div>
+</div>
+<!-- Copyright -->
+<div class="pt-6 text-center text-slate-500 text-[11px]">
+<p>© 2024 SHOP MẸ BÉ PI. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>
+
+<!-- Load header component -->
+<script src="js/load-header.js"></script>
+</body>
+</html>

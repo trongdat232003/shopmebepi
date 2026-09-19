@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Khuyến Mãi - Shop Mẹ Bé Pi</title>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Be Vietnam Pro -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Lucide Icons CDN for realistic visual elements -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              teal: '#0d7480',
+              tealLight: '#e6f4f6',
+              tealHover: '#0a5b65',
+              orange: '#f24e2b',
+              orangeHover: '#d83a19',
+              coral: '#ff5c47',
+              navy: '#062638',
+              bgGray: '#f8fafc',
+              lightBorder: '#e2e8f0',
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="base-typography">
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      color: #334155;
+      background-color: #ffffff;
+    }
+  </style>
+<style data-purpose="floating-contact">
+    .floating-contact-bar {
+      position: fixed;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 50;
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col justify-between" data-page="promotion">
+<!-- Header chung -->
+<div id="header-placeholder"></div>
+<!-- Floating Sticky Consultation Menu (Right Side) -->
+<aside class="floating-contact-bar flex flex-col items-center gap-1.5 bg-[#082a3d] text-white p-2 rounded-l-xl shadow-xl text-[10px] select-none font-medium">
+<div class="flex flex-col items-center cursor-pointer p-1 rounded hover:bg-slate-700">
+<img alt="Tư vấn mẹ Pi" class="w-8 h-8 rounded-full border border-teal-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWUN6-3POzCvy3UkIXMavX5UfjdRUGmUI16P0UHyz-_H4LwnPNtXbs2vp179b6Peyt6-Ai4WVhRDx6RIBM_K5yymXhd6MMhxQELHso0xgsCebFkryK6PvHm4ZK7wx38t8s2tt71PEbQD5i3vbkyXlmokjHCieWSyUV5IYzLbnSxBMLassDXUj8kjXOIAAKj-7YhEL5DD0Ev10D9OMVlRbO0Rujy1NV-kSQkKeOx2u8ueUAouUydTUWMg"/>
+<span class="text-center leading-tight mt-0.5">Tư vấn<br/>miễn phí</span>
+</div>
+<hr class="w-6 border-slate-600 my-1"/>
+<div class="flex flex-col items-center cursor-pointer p-1 rounded hover:bg-slate-700">
+<i class="w-4 h-4 text-emerald-400" data-lucide="phone-call"></i>
+<span>Gọi ngay</span>
+</div>
+<div class="flex flex-col items-center cursor-pointer p-1 rounded hover:bg-slate-700">
+<i class="w-4 h-4 text-amber-400" data-lucide="message-circle"></i>
+<span>Nhắn tin</span>
+</div>
+<div class="flex flex-col items-center cursor-pointer p-1 rounded hover:bg-slate-700">
+<div class="w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center font-bold text-[9px]">Z</div>
+<span>Zalo</span>
+</div>
+<div class="flex flex-col items-center cursor-pointer p-1 rounded hover:bg-slate-700">
+<i class="w-4 h-4 text-sky-400" data-lucide="send"></i>
+<span>Messenger</span>
+</div>
+<div class="mt-1 cursor-pointer text-gray-400 hover:text-white">
+<i class="w-3.5 h-3.5" data-lucide="x"></i>
+</div>
+</aside>
+<!-- BEGIN: MainContent -->
+<main class="flex-grow pb-16 bg-[#fafbfc]">
+<!-- Breadcrumb -->
+<div class="max-w-6xl mx-auto px-4 py-3 text-xs text-gray-500 flex items-center gap-1">
+<a class="hover:text-brand-teal" href="/index.html">Trang chủ</a>
+<span class="text-gray-400">/</span>
+<span class="font-medium text-gray-700">Khuyến mãi</span>
+</div>
+<!-- BEGIN: HeroPromoBanner -->
+<section class="max-w-6xl mx-auto px-4 my-2" data-purpose="hero-promo">
+<div class="relative bg-gradient-to-r from-orange-50/60 via-amber-50/40 to-teal-50/50 rounded-2xl border border-orange-100/80 p-6 md:p-8 overflow-hidden shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+<!-- Text Info Left -->
+<div class="lg:col-span-5 space-y-4 text-left">
+<h1 class="text-4xl md:text-5xl font-black text-brand-orange tracking-tight">
+              KHUYẾN MÃI
+            </h1>
+<p class="text-base md:text-lg font-bold text-gray-800">
+              Ưu đãi đúng nhu cầu – Tiết kiệm cho cả gia đình
+            </p>
+<p class="text-sm font-semibold text-gray-600">
+              Giảm đến <span class="text-brand-orange text-xl font-extrabold">20%</span> cho các combo được chọn lọc
+            </p>
+<!-- CTA Action Buttons -->
+<div class="flex flex-wrap items-center gap-3 pt-2">
+<a class="bg-brand-orange hover:bg-brand-orangeHover text-white px-6 py-2.5 rounded-lg text-xs md:text-sm font-bold uppercase tracking-wide transition shadow" href="#combo-hot">
+                XEM ƯU ĐÃI
+              </a>
+<a class="bg-brand-teal hover:bg-brand-tealHover text-white px-6 py-2.5 rounded-lg text-xs md:text-sm font-bold uppercase tracking-wide transition shadow" href="#tu-van">
+                NHẬN TƯ VẤN
+              </a>
+</div>
+</div>
+<!-- Central Visual Combo Products -->
+<div class="lg:col-span-4 flex items-center justify-center">
+<div class="relative flex items-center justify-center">
+<!-- Decorative Gift Box Background -->
+<div class="w-64 h-56 bg-gradient-to-tr from-amber-100 to-orange-100 rounded-2xl flex items-center justify-center p-3 relative shadow-inner">
+<div class="absolute -top-3 left-6 text-amber-500">
+<i class="w-8 h-8" data-lucide="gift"></i>
+</div>
+<!-- Supplements Group Mockup -->
+<div class="flex items-end justify-center gap-1.5 z-10">
+<div class="w-14 h-24 bg-white rounded-md shadow border border-emerald-400 p-1 flex flex-col justify-between text-center">
+<span class="text-[8px] font-bold bg-emerald-600 text-white rounded">ZINC</span>
+<span class="text-[7px] text-gray-500">Kẽm hữu cơ</span>
+</div>
+<div class="w-14 h-28 bg-white rounded-md shadow border border-amber-400 p-1 flex flex-col justify-between text-center">
+<span class="text-[8px] font-bold bg-amber-500 text-white rounded">LYSING</span>
+<span class="text-[7px] text-gray-500">Tăng đề kháng</span>
+</div>
+<div class="w-14 h-20 bg-white rounded-md shadow border border-blue-400 p-1 flex flex-col justify-between text-center">
+<span class="text-[7px] font-bold bg-blue-500 text-white rounded">Bio-acimin</span>
+<span class="text-[7px] text-gray-500">Men vi sinh</span>
+</div>
+<div class="w-16 h-32 bg-white rounded-md shadow border border-orange-400 p-1 flex flex-col justify-between text-center">
+<span class="text-[8px] font-bold bg-orange-500 text-white rounded">APPETITO</span>
+<span class="text-[7px] text-gray-500">Ăn ngon</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Countdown Timer Right -->
+<div class="lg:col-span-3 flex flex-col items-center lg:items-end justify-center text-center">
+<span class="text-xs font-bold text-gray-700 uppercase tracking-wide mb-2">Thời gian còn lại</span>
+<div class="flex items-center gap-2">
+<div class="flex flex-col items-center">
+<span class="bg-brand-orange text-white text-xl md:text-2xl font-black w-12 h-11 rounded-lg flex items-center justify-center shadow">02</span>
+<span class="text-[10px] uppercase font-bold text-gray-500 mt-1">NGÀY</span>
+</div>
+<span class="text-lg font-bold text-gray-400 -mt-3">:</span>
+<div class="flex flex-col items-center">
+<span class="bg-brand-orange text-white text-xl md:text-2xl font-black w-12 h-11 rounded-lg flex items-center justify-center shadow">08</span>
+<span class="text-[10px] uppercase font-bold text-gray-500 mt-1">GIỜ</span>
+</div>
+<span class="text-lg font-bold text-gray-400 -mt-3">:</span>
+<div class="flex flex-col items-center">
+<span class="bg-brand-orange text-white text-xl md:text-2xl font-black w-12 h-11 rounded-lg flex items-center justify-center shadow">35</span>
+<span class="text-[10px] uppercase font-bold text-gray-500 mt-1">PHÚT</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroPromoBanner -->
+<!-- BEGIN: QuickCategoryFilter -->
+<section class="max-w-6xl mx-auto px-4 my-8" data-purpose="quick-filter">
+<h2 class="text-center font-bold text-base md:text-lg text-gray-800 tracking-wide uppercase mb-5">
+        CHỌN NHANH ƯU ĐÃI
+      </h2>
+<div class="flex items-center justify-center flex-wrap gap-4 md:gap-8">
+<!-- Item 1 -->
+<a class="flex flex-col items-center gap-2 group" href="#">
+<div class="w-14 h-14 rounded-full bg-amber-100 flex items-center justify-center border border-amber-200 group-hover:scale-105 transition-transform">
+<i class="w-6 h-6 text-amber-600" data-lucide="tag"></i>
+</div>
+<span class="text-xs font-semibold text-gray-700 group-hover:text-brand-teal">Tất cả ưu đãi</span>
+</a>
+<!-- Item 2 -->
+<a class="flex flex-col items-center gap-2 group" href="#">
+<div class="w-14 h-14 rounded-full bg-rose-100 flex items-center justify-center border border-rose-200 group-hover:scale-105 transition-transform">
+<i class="w-6 h-6 text-rose-500" data-lucide="baby"></i>
+</div>
+<span class="text-xs font-semibold text-gray-700 group-hover:text-brand-teal">Ưu đãi cho bé</span>
+</a>
+<!-- Item 3 -->
+<a class="flex flex-col items-center gap-2 group" href="#">
+<div class="w-14 h-14 rounded-full bg-sky-100 flex items-center justify-center border border-sky-200 group-hover:scale-105 transition-transform">
+<i class="w-6 h-6 text-sky-600" data-lucide="users"></i>
+</div>
+<span class="text-xs font-semibold text-gray-700 group-hover:text-brand-teal">Ưu đãi người lớn</span>
+</a>
+<!-- Item 4 -->
+<a class="flex flex-col items-center gap-2 group" href="#">
+<div class="w-14 h-14 rounded-full bg-red-100 flex items-center justify-center border border-red-200 group-hover:scale-105 transition-transform">
+<i class="w-6 h-6 text-red-500" data-lucide="package"></i>
+</div>
+<span class="text-xs font-semibold text-gray-700 group-hover:text-brand-teal">Combo tiết kiệm</span>
+</a>
+<!-- Item 5 -->
+<a class="flex flex-col items-center gap-2 group" href="#">
+<div class="w-14 h-14 rounded-full bg-pink-100 flex items-center justify-center border border-pink-200 group-hover:scale-105 transition-transform">
+<i class="w-6 h-6 text-pink-500" data-lucide="gift"></i>
+</div>
+<span class="text-xs font-semibold text-gray-700 group-hover:text-brand-teal">Quà tặng kèm</span>
+</a>
+</div>
+</section>
+<!-- END: QuickCategoryFilter -->
+<!-- BEGIN: FeaturedComboSection -->
+<section class="max-w-6xl mx-auto px-4 my-8" data-purpose="featured-deals" id="combo-hot">
+<div class="text-center mb-6">
+<h2 class="text-lg md:text-xl font-bold text-gray-900 uppercase">ƯU ĐÃI NỔI BẬT</h2>
+<p class="text-xs text-gray-500 mt-0.5">Deal được yêu thích</p>
+</div>
+<!-- Combo Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<!-- Card 1 -->
+<div class="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-4 flex flex-col justify-between relative">
+<!-- Discount Badge & Name -->
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-brand-orange text-white text-xs font-bold px-2 py-0.5 rounded-md">-15%</span>
+<div>
+<h3 class="text-xs md:text-sm font-bold text-gray-800">Combo Đề kháng cho bé</h3>
+<p class="text-[10px] text-gray-500">Tiết kiệm hơn khi mua theo combo</p>
+</div>
+</div>
+<!-- Product Combo Preview -->
+<div class="h-44 bg-gray-50 rounded-lg p-2 flex items-end justify-center gap-2 mb-4 border border-dashed border-gray-200">
+<div class="w-16 h-28 bg-white rounded border border-blue-300 p-1 flex flex-col justify-between items-center text-center shadow-sm">
+<span class="text-[8px] font-bold text-blue-700">immunace</span>
+<span class="text-[7px] text-gray-400">Si rô</span>
+</div>
+<div class="w-14 h-24 bg-white rounded border border-emerald-400 p-1 flex flex-col justify-between items-center text-center shadow-sm">
+<span class="text-[8px] font-bold text-emerald-700">ZINC</span>
+<span class="text-[7px] text-gray-400">Viên kẽm</span>
+</div>
+<div class="w-14 h-28 bg-white rounded border border-amber-400 p-1 flex flex-col justify-between items-center text-center shadow-sm">
+<span class="text-[8px] font-bold text-amber-700">LYSING</span>
+<span class="text-[7px] text-gray-400">Tăng hấp thu</span>
+</div>
+</div>
+<!-- Pricing & CTA -->
+<div class="space-y-3">
+<div class="flex items-baseline justify-center gap-2">
+<span class="text-xs text-gray-400 line-through">1.470.000đ</span>
+<span class="text-base font-extrabold text-brand-orange">1.249.000đ</span>
+</div>
+<button class="w-full bg-brand-teal hover:bg-brand-tealHover text-white py-2 rounded-lg text-xs font-bold tracking-wider uppercase transition">
+              XEM CHI TIẾT
+            </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-4 flex flex-col justify-between relative">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-brand-orange text-white text-xs font-bold px-2 py-0.5 rounded-md">-12%</span>
+<div>
+<h3 class="text-xs md:text-sm font-bold text-gray-800">Combo Tiêu hóa khỏe</h3>
+<p class="text-[10px] text-gray-500">Tiết kiệm hơn khi mua theo combo</p>
+</div>
+</div>
+<div class="h-44 bg-gray-50 rounded-lg p-2 flex items-end justify-center gap-3 mb-4 border border-dashed border-gray-200">
+<div class="w-16 h-24 bg-white rounded border border-blue-400 p-1 flex flex-col justify-between items-center text-center shadow-sm">
+<span class="text-[8px] font-bold text-blue-600">Bio-acimin</span>
+<span class="text-[7px] text-gray-400">Men sống</span>
+</div>
+<div class="w-20 h-32 bg-white rounded border border-orange-400 p-1 flex flex-col justify-between items-center text-center shadow-sm">
+<span class="text-[9px] font-bold text-orange-600">APPETITO</span>
+<span class="text-[7px] text-gray-400">Ăn ngon Siro</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex items-baseline justify-center gap-2">
+<span class="text-xs text-gray-400 line-through">840.000đ</span>
+<span class="text-base font-extrabold text-brand-orange">739.000đ</span>
+</div>
+<button class="w-full bg-brand-teal hover:bg-brand-tealHover text-white py-2 rounded-lg text-xs font-bold tracking-wider uppercase transition">
+              XEM CHI TIẾT
+            </button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-4 flex flex-col justify-between relative">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-brand-orange text-white text-xs font-bold px-2 py-0.5 rounded-md">-10%</span>
+<div>
+<h3 class="text-xs md:text-sm font-bold text-gray-800">Combo Xương khớp người lớn</h3>
+<p class="text-[10px] text-gray-500">Tiết kiệm hơn khi mua theo combo</p>
+</div>
+</div>
+<div class="h-44 bg-gray-50 rounded-lg p-2 flex items-end justify-center gap-3 mb-4 border border-dashed border-gray-200">
+<div class="w-16 h-28 bg-white rounded border border-sky-500 p-1 flex flex-col justify-between items-center text-center shadow-sm">
+<span class="text-[8px] font-bold text-sky-700">Glucosamine</span>
+<span class="text-[7px] text-gray-400">Khớp dẻo</span>
+</div>
+<div class="w-16 h-32 bg-white rounded border border-blue-800 p-1 flex flex-col justify-between items-center text-center shadow-sm">
+<span class="text-[8px] font-bold text-blue-900">Osteo Bi-Flex</span>
+<span class="text-[7px] text-gray-400">Triple Strength</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex items-baseline justify-center gap-2">
+<span class="text-xs text-gray-400 line-through">1.980.000đ</span>
+<span class="text-base font-extrabold text-brand-orange">1.782.000đ</span>
+</div>
+<button class="w-full bg-brand-teal hover:bg-brand-tealHover text-white py-2 rounded-lg text-xs font-bold tracking-wider uppercase transition">
+              XEM CHI TIẾT
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FeaturedComboSection -->
+<!-- BEGIN: KidsComboSection -->
+<section class="max-w-6xl mx-auto px-4 my-10" data-purpose="kids-combo-section">
+<h2 class="text-center font-bold text-base md:text-lg text-gray-800 tracking-wide uppercase mb-6">
+        COMBO ƯU ĐÃI CHO BÉ
+      </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<!-- Category 1: Biếng ăn & chậm hấp thu -->
+<div class="bg-white rounded-xl border border-gray-200 p-4 flex flex-col justify-between shadow-sm hover:border-gray-300 transition">
+<div class="flex items-center gap-2.5 mb-3">
+<div class="w-8 h-8 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center border border-blue-100">
+<i class="w-4 h-4" data-lucide="utensils"></i>
+</div>
+<span class="text-xs md:text-sm font-bold text-gray-800 leading-snug">Biếng ăn &amp;<br/>chậm hấp thu</span>
+</div>
+<div class="h-32 bg-gray-50 rounded-lg p-2 flex items-center justify-center gap-2 mb-3">
+<div class="w-14 h-24 bg-white rounded border border-orange-300 p-1 flex flex-col justify-between items-center text-center">
+<span class="text-[7px] font-bold text-orange-600">APPETITO</span>
+</div>
+<span class="text-gray-400 font-bold text-sm">+</span>
+<div class="w-12 h-20 bg-white rounded border border-emerald-400 p-1 flex flex-col justify-between items-center text-center">
+<span class="text-[7px] font-bold text-emerald-600">ZINC</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<div>
+<span class="text-[11px] text-gray-400 line-through block leading-none">780.000đ</span>
+<span class="text-sm font-bold text-brand-orange">665.000đ</span>
+</div>
+<span class="bg-brand-orange text-white text-[11px] font-bold px-1.5 py-0.5 rounded">-15%</span>
+</div>
+<a class="inline-flex items-center gap-1 text-[11px] font-bold text-gray-600 hover:text-brand-teal transition" href="#">
+<span>XEM NGAY</span>
+<i class="w-3.5 h-3.5" data-lucide="chevron-right"></i>
+</a>
+</div>
+</div>
+<!-- Category 2: Tăng đề kháng -->
+<div class="bg-white rounded-xl border border-gray-200 p-4 flex flex-col justify-between shadow-sm hover:border-gray-300 transition">
+<div class="flex items-center gap-2.5 mb-3">
+<div class="w-8 h-8 rounded-full bg-emerald-50 text-emerald-500 flex items-center justify-center border border-emerald-100">
+<i class="w-4 h-4" data-lucide="shield"></i>
+</div>
+<span class="text-xs md:text-sm font-bold text-gray-800">Tăng đề kháng</span>
+</div>
+<div class="h-32 bg-gray-50 rounded-lg p-2 flex items-center justify-center gap-2 mb-3">
+<div class="w-14 h-24 bg-white rounded border border-blue-400 p-1 flex flex-col justify-between items-center text-center">
+<span class="text-[7px] font-bold text-blue-600">immunace</span>
+</div>
+<span class="text-gray-400 font-bold text-sm">+</span>
+<div class="w-12 h-20 bg-white rounded border border-emerald-400 p-1 flex flex-col justify-between items-center text-center">
+<span class="text-[7px] font-bold text-emerald-600">ZINC</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<div>
+<span class="text-[11px] text-gray-400 line-through block leading-none">1.470.000đ</span>
+<span class="text-sm font-bold text-brand-orange">1.249.000đ</span>
+</div>
+<span class="bg-brand-orange text-white text-[11px] font-bold px-1.5 py-0.5 rounded">-15%</span>
+</div>
+<a class="inline-flex items-center gap-1 text-[11px] font-bold text-gray-600 hover:text-brand-teal transition" href="#">
+<span>XEM NGAY</span>
+<i class="w-3.5 h-3.5" data-lucide="chevron-right"></i>
+</a>
+</div>
+</div>
+<!-- Category 3: Phát triển trí não -->
+<div class="bg-white rounded-xl border border-gray-200 p-4 flex flex-col justify-between shadow-sm hover:border-gray-300 transition">
+<div class="flex items-center gap-2.5 mb-3">
+<div class="w-8 h-8 rounded-full bg-purple-50 text-purple-500 flex items-center justify-center border border-purple-100">
+<i class="w-4 h-4" data-lucide="brain"></i>
+</div>
+<span class="text-xs md:text-sm font-bold text-gray-800">Phát triển trí não</span>
+</div>
+<div class="h-32 bg-gray-50 rounded-lg p-2 flex items-center justify-center gap-2 mb-3">
+<div class="w-14 h-22 bg-white rounded border border-blue-400 p-1 flex flex-col justify-between items-center text-center">
+<span class="text-[7px] font-bold text-blue-600">Bio-acimin</span>
+</div>
+<span class="text-gray-400 font-bold text-sm">+</span>
+<div class="w-12 h-24 bg-white rounded border border-amber-400 p-1 flex flex-col justify-between items-center text-center">
+<span class="text-[7px] font-bold text-amber-600">LYSING</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<div>
+<span class="text-[11px] text-gray-400 line-through block leading-none">880.000đ</span>
+<span class="text-sm font-bold text-brand-orange">739.000đ</span>
+</div>
+<span class="bg-brand-orange text-white text-[11px] font-bold px-1.5 py-0.5 rounded">-16%</span>
+</div>
+<a class="inline-flex items-center gap-1 text-[11px] font-bold text-gray-600 hover:text-brand-teal transition" href="#">
+<span>XEM NGAY</span>
+<i class="w-3.5 h-3.5" data-lucide="chevron-right"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: KidsComboSection -->
+<!-- BEGIN: AdultComboSection -->
+<section class="max-w-6xl mx-auto px-4 my-10" data-purpose="adult-combo-section">
+<h2 class="text-center font-bold text-base md:text-lg text-gray-800 tracking-wide uppercase mb-6">
+        COMBO ƯU ĐÃI CHO NGƯỜI LỚN
+      </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<!-- Adult 1: Giấc ngủ & trí nhớ -->
+<div class="bg-white rounded-xl border border-gray-200 p-4 flex flex-col justify-between shadow-sm hover:border-gray-300 transition">
+<div class="flex items-center gap-2.5 mb-3">
+<div class="w-8 h-8 rounded-full bg-teal-50 text-brand-teal flex items-center justify-center border border-teal-100">
+<i class="w-4 h-4" data-lucide="moon"></i>
+</div>
+<span class="text-xs md:text-sm font-bold text-gray-800">Giấc ngủ &amp; trí nhớ</span>
+</div>
+<div class="h-32 bg-gray-50 rounded-lg p-2 flex items-center justify-center gap-2 mb-3">
+<div class="w-14 h-22 bg-white rounded border border-indigo-300 p-1 flex flex-col justify-between items-center text-center">
+<span class="text-[7px] font-bold text-indigo-700">Natrol</span>
+<span class="text-[6px] text-gray-400">Melatonin</span>
+</div>
+<span class="text-gray-400 font-bold text-sm">+</span>
+<div class="w-12 h-22 bg-white rounded border border-emerald-400 p-1 flex flex-col justify-between items-center text-center">
+<span class="text-[7px] font-bold text-emerald-700">GINKGO</span>
+<span class="text-[6px] text-gray-400">BILOBA</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<div>
+<span class="text-[11px] text-gray-400 line-through block leading-none">980.000đ</span>
+<span class="text-sm font-bold text-brand-orange">832.000đ</span>
+</div>
+<span class="bg-brand-orange text-white text-[11px] font-bold px-1.5 py-0.5 rounded">-15%</span>
+</div>
+<a class="inline-flex items-center gap-1 text-[11px] font-bold text-gray-600 hover:text-brand-teal transition" href="#">
+<span>XEM NGAY</span>
+<i class="w-3.5 h-3.5" data-lucide="chevron-right"></i>
+</a>
+</div>
+</div>
+<!-- Adult 2: Cơ xương khớp -->
+<div class="bg-white rounded-xl border border-gray-200 p-4 flex flex-col justify-between shadow-sm hover:border-gray-300 transition">
+<div class="flex items-center gap-2.5 mb-3">
+<div class="w-8 h-8 rounded-full bg-cyan-50 text-cyan-600 flex items-center justify-center border border-cyan-100">
+<i class="w-4 h-4" data-lucide="activity"></i>
+</div>
+<span class="text-xs md:text-sm font-bold text-gray-800">Cơ xương khớp</span>
+</div>
+<div class="h-32 bg-gray-50 rounded-lg p-2 flex items-center justify-center gap-2 mb-3">
+<div class="w-14 h-24 bg-white rounded border border-sky-400 p-1 flex flex-col justify-between items-center text-center">
+<span class="text-[7px] font-bold text-sky-700">Glucosamine</span>
+</div>
+<span class="text-gray-400 font-bold text-sm">+</span>
+<div class="w-14 h-26 bg-white rounded border border-blue-800 p-1 flex flex-col justify-between items-center text-center">
+<span class="text-[7px] font-bold text-blue-900">Osteo Bi-Flex</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<div>
+<span class="text-[11px] text-gray-400 line-through block leading-none">1.980.000đ</span>
+<span class="text-sm font-bold text-brand-orange">1.782.000đ</span>
+</div>
+<span class="bg-brand-orange text-white text-[11px] font-bold px-1.5 py-0.5 rounded">-10%</span>
+</div>
+<a class="inline-flex items-center gap-1 text-[11px] font-bold text-gray-600 hover:text-brand-teal transition" href="#">
+<span>XEM NGAY</span>
+<i class="w-3.5 h-3.5" data-lucide="chevron-right"></i>
+</a>
+</div>
+</div>
+<!-- Adult 3: Tim mạch & huyết áp -->
+<div class="bg-white rounded-xl border border-gray-200 p-4 flex flex-col justify-between shadow-sm hover:border-gray-300 transition">
+<div class="flex items-center gap-2.5 mb-3">
+<div class="w-8 h-8 rounded-full bg-rose-50 text-rose-500 flex items-center justify-center border border-rose-100">
+<i class="w-4 h-4" data-lucide="heart-pulse"></i>
+</div>
+<span class="text-xs md:text-sm font-bold text-gray-800">Tim mạch &amp; huyết áp</span>
+</div>
+<div class="h-32 bg-gray-50 rounded-lg p-2 flex items-center justify-center gap-2 mb-3">
+<div class="w-12 h-20 bg-white rounded border border-rose-300 p-1 flex flex-col justify-between items-center text-center">
+<span class="text-[7px] font-bold text-rose-700">CoQ10</span>
+</div>
+<span class="text-gray-400 font-bold text-sm">+</span>
+<div class="w-14 h-24 bg-white rounded border border-blue-400 p-1 flex flex-col justify-between items-center text-center">
+<span class="text-[7px] font-bold text-blue-700">OMEGA-3</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<div>
+<span class="text-[11px] text-gray-400 line-through block leading-none">1.330.000đ</span>
+<span class="text-sm font-bold text-brand-orange">1.131.000đ</span>
+</div>
+<span class="bg-brand-orange text-white text-[11px] font-bold px-1.5 py-0.5 rounded">-15%</span>
+</div>
+<a class="inline-flex items-center gap-1 text-[11px] font-bold text-gray-600 hover:text-brand-teal transition" href="#">
+<span>XEM NGAY</span>
+<i class="w-3.5 h-3.5" data-lucide="chevron-right"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AdultComboSection -->
+<!-- BEGIN: VoucherSection -->
+<section class="max-w-6xl mx-auto px-4 my-10" data-purpose="voucher-section">
+<h2 class="text-center font-bold text-base md:text-lg text-gray-800 tracking-wide uppercase mb-6">
+        VOUCHER DÀNH CHO MẸ
+      </h2>
+<!-- Voucher Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+<!-- Voucher 1 -->
+<div class="border border-orange-200 bg-orange-50/40 rounded-xl p-4 flex items-center gap-3">
+<div class="text-brand-orange">
+<i class="w-10 h-10 stroke-1" data-lucide="ticket"></i>
+</div>
+<div>
+<span class="text-lg font-black text-brand-orange block">50.000đ</span>
+<span class="text-xs text-gray-600 font-medium">Đơn hàng đầu tiên</span>
+</div>
+</div>
+<!-- Voucher 2 -->
+<div class="border border-teal-200 bg-teal-50/40 rounded-xl p-4 flex items-center gap-3">
+<div class="text-brand-teal">
+<i class="w-10 h-10 stroke-1" data-lucide="truck"></i>
+</div>
+<div>
+<span class="text-lg font-black text-brand-teal block">FREESHIP</span>
+<span class="text-xs text-gray-600 font-medium">Đơn hàng từ 1.000.000đ</span>
+</div>
+</div>
+<!-- Voucher 3 -->
+<div class="border border-amber-200 bg-amber-50/40 rounded-xl p-4 flex items-center gap-3">
+<div class="text-amber-600">
+<i class="w-10 h-10 stroke-1" data-lucide="gift"></i>
+</div>
+<div>
+<span class="text-lg font-black text-amber-600 block">QUÀ TẶNG</span>
+<span class="text-xs text-gray-600 font-medium">Theo từng chương trình</span>
+</div>
+</div>
+</div>
+<!-- Terms & Direct Consultation Banner -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-stretch">
+<!-- Terms box -->
+<div class="md:col-span-6 bg-white border border-gray-200 rounded-xl p-5 flex gap-3.5 shadow-sm">
+<div class="text-brand-teal mt-0.5">
+<i class="w-6 h-6" data-lucide="file-text"></i>
+</div>
+<div class="space-y-1.5 text-xs text-gray-600">
+<h4 class="font-bold text-gray-800 text-sm mb-1">Điều kiện áp dụng</h4>
+<div class="flex items-start gap-1.5">
+<span class="text-brand-teal font-bold">✓</span>
+<span>Mỗi chương trình có thời gian và số lượng giới hạn.</span>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="text-brand-teal font-bold">✓</span>
+<span>Sản phẩm trong combo có thể thay đổi theo tồn kho nhưng luôn được thông báo trước.</span>
+</div>
+</div>
+</div>
+<!-- Direct Consultation Box -->
+<div class="md:col-span-6 bg-cyan-50/70 border border-cyan-200 rounded-xl p-5 flex flex-col justify-between relative overflow-hidden shadow-sm" id="tu-van">
+<div class="flex justify-between items-start">
+<div class="space-y-1 max-w-[280px]">
+<span class="text-[11px] font-bold text-brand-teal uppercase tracking-wider">LIÊN HỆ TƯ VẤN</span>
+<h3 class="text-sm md:text-base font-bold text-gray-900 leading-snug">Chưa biết ưu đãi nào phù hợp?</h3>
+<p class="text-xs text-gray-600">Mẹ Pi giúp mẹ chọn combo theo đúng nhu cầu, tránh mua thừa.</p>
+</div>
+<!-- Avatar Illustrator -->
+<div class="w-16 h-16 rounded-full bg-white p-1 border-2 border-brand-teal flex-shrink-0 flex items-center justify-center">
+<img alt="Tư vấn Mẹ Pi" class="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARobY7MvOBhJZ7qjSPLkfUakd65q4u4e_9AdN5HbWk6CtIgvnzTVlFYeWJDnOJHUfrLz_6eKKrQeNYLHf30DNspSiXIj4QGSJ0wCBjoa4wjuVu1IQk9xmuRc231PqFblA8lbiVD7W99J5UFw7QajvyVcUmmnC9R_VcDksYYyHF_F8qUP0SS67nzTuhNf2qhZwQS12DyyDIvNJe0csOLixk-wafKthZjvjkPKThJkdWDn6XRI2SSIMZtQ"/>
+</div>
+</div>
+<div class="mt-4">
+<button class="w-full bg-brand-teal hover:bg-brand-tealHover text-white py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition shadow">
+              NHẬN TƯ VẤN MIỄN PHÍ
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- END: VoucherSection -->
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: MainFooter -->
+<footer class="bg-[#082a3d] text-gray-300 text-xs">
+<div class="max-w-6xl mx-auto px-4 py-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Column 1: Brand Info -->
+<div class="space-y-3">
+<div class="flex items-center gap-2">
+<i class="w-5 h-5 text-rose-400" data-lucide="heart-handshake"></i>
+<span class="text-sm font-extrabold text-white uppercase tracking-wider">SHOP MẸ BÉ PI</span>
+</div>
+<p class="text-gray-400 leading-relaxed text-[11px]">
+            Đồng hành cùng mẹ chăm sóc bé yêu khỏe mạnh, phát triển toàn diện.
+          </p>
+<div class="pt-2">
+<span class="block text-[11px] text-gray-400 mb-2">Kết nối với chúng tôi</span>
+<div class="flex items-center gap-2.5 text-white">
+<a class="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-teal transition" href="#"><i class="w-3.5 h-3.5" data-lucide="music-2"></i></a>
+<a class="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-teal transition" href="#"><i class="w-3.5 h-3.5" data-lucide="facebook"></i></a>
+<a class="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-teal transition" href="#"><i class="w-3.5 h-3.5" data-lucide="youtube"></i></a>
+<a class="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-teal transition" href="#"><i class="w-3.5 h-3.5" data-lucide="instagram"></i></a>
+</div>
+</div>
+</div>
+<!-- Column 2: About Pi -->
+<div>
+<h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">VỀ SHOP MẸ BÉ PI</h4>
+<ul class="space-y-2 text-[11px] text-gray-400">
+<li><a class="hover:text-white transition" href="#">Giới thiệu</a></li>
+<li><a class="hover:text-white transition" href="#">Cam kết của chúng tôi</a></li>
+<li><a class="hover:text-white transition" href="#">Chính sách đổi trả</a></li>
+<li><a class="hover:text-white transition" href="#">Chính sách bảo mật</a></li>
+<li><a class="hover:text-white transition" href="#">Tuyển dụng</a></li>
+</ul>
+</div>
+<!-- Column 3: Customer Care -->
+<div>
+<h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">HỖ TRỢ KHÁCH HÀNG</h4>
+<ul class="space-y-2 text-[11px] text-gray-400">
+<li><a class="hover:text-white transition" href="#">Hướng dẫn mua hàng</a></li>
+<li><a class="hover:text-white transition" href="#">Hướng dẫn thanh toán</a></li>
+<li><a class="hover:text-white transition" href="#">Chính sách giao hàng</a></li>
+<li><a class="hover:text-white transition" href="#">Câu hỏi thường gặp</a></li>
+<li><a class="hover:text-white transition" href="#">Liên hệ</a></li>
+</ul>
+</div>
+<!-- Column 4: Contact Info & Certificates -->
+<div class="space-y-3">
+<h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">THÔNG TIN LIÊN HỆ</h4>
+<ul class="space-y-2 text-[11px] text-gray-400">
+<li class="flex items-center gap-2">
+<i class="w-3.5 h-3.5 text-brand-teal" data-lucide="phone"></i>
+<span>Tư vấn dinh dưỡng: <strong class="text-white">0988 663 035</strong></span>
+</li>
+<li class="flex items-center gap-2">
+<i class="w-3.5 h-3.5 text-brand-teal" data-lucide="mail"></i>
+<span>Email: cskh@shopmebepi.vn</span>
+</li>
+<li class="flex items-center gap-2">
+<i class="w-3.5 h-3.5 text-brand-teal" data-lucide="clock"></i>
+<span>Thời gian: 8:00 - 20:00 (T2 - CN)</span>
+</li>
+<li class="flex items-center gap-2">
+<i class="w-3.5 h-3.5 text-brand-teal" data-lucide="map-pin"></i>
+<span>Hệ thống của hàng</span>
+</li>
+</ul>
+<!-- Certification Badges -->
+<div class="flex items-center gap-3 pt-2">
+<div class="border border-blue-400/30 bg-blue-950/40 rounded px-2 py-1 text-[9px] text-center text-blue-200">
+<span class="block font-bold">ĐÃ THÔNG BÁO</span>
+<span class="block text-[8px]">BỘ CÔNG THƯƠNG</span>
+</div>
+<div class="border border-emerald-400/30 bg-emerald-950/40 rounded px-2 py-1 text-[9px] text-center text-emerald-200 font-bold">
+              DMCA PROTECTED
+            </div>
+</div>
+</div>
+</div>
+<!-- Copyright Bottom Bar -->
+<div class="border-t border-slate-800 mt-8 pt-4 text-center text-[10px] text-gray-500">
+        © 2024 SHOP MẸ BÉ PI. All rights reserved.
+      </div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- Load header component -->
+<script src="js/load-header.js"></script>
+
+<!-- BEGIN: LucideIconActivation -->
+<script data-purpose="icon-activation">
+    // Khởi tạo các icon Lucide
+    lucide.createIcons();
+  </script>
+<!-- END: LucideIconActivation -->
+</body></html>

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHOP MẸ BÉ PI - Dinh dưỡng đúng nhu cầu, chăm sóc cả gia đình</title>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Be Vietnam Pro -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: '#006D77',
+              tealLight: '#83C5BE',
+              tealBg: '#EDF6F7',
+              navy: '#0F2C3F',
+              orange: '#E25C38',
+              orangeLight: '#FFF2EE',
+              redBadge: '#E63946',
+              border: '#E2E8F0',
+              textDark: '#1E293B',
+              textMuted: '#64748B',
+            }
+          },
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-utilities">
+    /* Subtle scrollbar & typography adjustments */
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      color: #1E293B;
+      background-color: #F8FAFC;
+    }
+    .shadow-soft {
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+    }
+    .badge-percent {
+      border-radius: 9999px;
+      padding: 2px 8px;
+      font-weight: 700;
+      font-size: 11px;
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col" data-page="index">
+<!-- Header chung -->
+<div id="header-placeholder"></div>
+<main class="flex-grow">
+<!-- BEGIN: HeroSection -->
+<section class="relative w-full overflow-hidden">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0">
+<img alt="Gia đình hạnh phúc" class="w-full h-full object-cover object-center" src="assets/assets_1.png"/>
+<div class="absolute inset-0 bg-gradient-to-r from-white/70 via-white/40 to-transparent"></div>
+</div>
+<!-- Content -->
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+<!-- Left: Text Content -->
+<div class="space-y-6 max-w-xl">
+<h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B2545] leading-tight">
+Dinh dưỡng đúng nhu cầu –<br/>
+<span class="text-[#006D77]">Chăm sóc cả gia đình</span>
+</h1>
+<div class="space-y-2 text-gray-700 text-base">
+<p class="font-medium">Không chọn sản phẩm theo quảng cáo.</p>
+<p>Hãy bắt đầu từ vấn đề cơ thể đang cần hỗ trợ.</p>
+</div>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-3 pt-4">
+<a class="inline-flex items-center gap-2 bg-[#0B2545] hover:bg-[#13335a] text-white text-sm font-bold px-6 py-3.5 rounded-lg transition shadow-md hover:shadow-lg" href="#giai-phap-be">
+<span>TÌM GIẢI PHÁP CHO BÉ</span>
+<i class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+<a class="inline-flex items-center gap-2 border-2 border-[#006D77] text-[#006D77] bg-white hover:bg-[#006D77] hover:text-white text-sm font-bold px-6 py-3.5 rounded-lg transition" href="#tu-van">
+<i class="fa-solid fa-headset"></i>
+<span>TƯ VẤN CÙNG MẸ PI</span>
+</a>
+</div>
+<!-- Trust Badges -->
+<div class="flex flex-wrap items-center gap-6 pt-6 border-t border-gray-200">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center">
+<img alt="USA Flag" class="w-6 h-6" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7410 3900'%3E%3Cpath fill='%23b22234' d='M0 0h7410v3900H0z'/%3E%3Cpath d='M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0' stroke='%23fff' stroke-width='300'/%3E%3Cpath fill='%233c3b6e' d='M0 0h2964v2100H0z'/%3E%3C/svg%3E"/>
+</div>
+<div class="leading-tight">
+<p class="text-sm font-bold text-gray-800">Hàng Mỹ</p>
+<p class="text-xs text-gray-600">chính hãng</p>
+</div>
+</div>
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-[#006D77]">
+<i class="fa-solid fa-truck text-lg"></i>
+</div>
+<div class="leading-tight">
+<p class="text-sm font-bold text-gray-800">Giao hàng</p>
+<p class="text-xs text-gray-600">toàn quốc</p>
+</div>
+</div>
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-[#006D77]">
+<i class="fa-solid fa-shield-halved text-lg"></i>
+</div>
+<div class="leading-tight">
+<p class="text-sm font-bold text-gray-800">Đổi trả dễ dàng</p>
+<p class="text-xs text-gray-600">trong 7 ngày</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Empty space for image background -->
+<div class="hidden lg:block"></div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: PromotionSection -->
+<section class="py-12 bg-white" id="khuyen-mai">
+<div class="max-w-6xl mx-auto px-4">
+<!-- Promotion Header -->
+<div class="flex items-center justify-between mb-8 pb-3 border-b border-gray-100">
+<div>
+<div class="flex items-center gap-2">
+<span class="text-rose-500 text-lg"><i class="fa-solid fa-feather-pointed"></i></span>
+<h2 class="text-2xl font-bold tracking-tight text-gray-900">KHUYẾN MÃI</h2>
+<span class="text-rose-500 text-lg"><i class="fa-solid fa-feather-pointed transform rotate-180"></i></span>
+</div>
+<p class="text-base font-medium text-gray-800 mt-1">Ưu đãi nổi bật hôm nay</p>
+<p class="text-xs text-gray-500">Combo đúng nhu cầu – Tiết kiệm hơn</p>
+</div>
+<a class="inline-flex items-center gap-2 bg-[#E25C38] hover:bg-[#cd4a27] text-white text-xs font-semibold px-4 py-2 rounded-full transition shadow-sm" href="#">
+<span>XEM TẤT CẢ ƯU ĐÃI</span>
+<i class="fa-solid fa-arrow-right text-[11px]"></i>
+</a>
+</div>
+<!-- Deals Showcase Cards -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-stretch">
+<!-- Banner Card Highlight -->
+<div class="bg-gradient-to-br from-[#FFF5EE] to-[#FFEFEA] border border-orange-200/60 rounded-2xl p-5 flex flex-col justify-between items-center text-center relative overflow-hidden">
+<div class="space-y-2">
+<span class="inline-block bg-orange-100 text-orange-700 text-[11px] font-bold px-2.5 py-0.5 rounded-full">QUÀ TẶNG KÈM</span>
+<h3 class="text-base font-bold text-gray-800 leading-snug">Hộp Quà Dinh Dưỡng Cao Cấp</h3>
+</div>
+<div class="my-4">
+<img alt="Hộp quà khuyến mãi" class="w-36 h-36 object-cover rounded-xl shadow-sm border border-orange-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTd6Dcq_829xVwg4OUFgt7gYoYO69f9eMw-GKZZF097MQEY5LJXppplkNfuFQO1cQvJ_bQhTBw5x6luRF9LPBVZ3Hm-CR7uACJqdEslU0hupXKyRKkQlaXz5fWlUG8G4fZk4zjzhJSVZLlIzp4m1S7-U0YziJbteOZvmHEPTIRiSo7VoTj_rWLWTzOOxi1jt17W-icUu_9U-TumzRH_jniEq1R6lzdSV9Ssk_yNDozPDTeHlmQCrtLhg"/>
+</div>
+<div class="w-full">
+<p class="text-[12px] text-gray-600">Áp dụng cho mọi đơn combo trên 1.500.000đ</p>
+</div>
+</div>
+<!-- Product Combo 1 -->
+<div class="bg-white border border-gray-100 rounded-2xl p-4 flex flex-col justify-between shadow-soft hover:shadow-md transition relative group">
+<span class="absolute top-3 left-3 bg-[#E63946] text-white text-[11px] font-bold px-2 py-0.5 rounded-full">-15%</span>
+<div class="flex justify-center my-4 pt-2">
+<img alt="Combo Đề kháng cho bé" class="w-32 h-32 object-contain group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxXVyjDlEWKx0tz7LMaEAghsVzLlmvraAkxtVXqJ8MzbK-a43YbgdXOzxXtztpanCgROHzK_BgaDWPSb1EO39Je-C-yr30KCqqQwRlEsASR3bL1ImJs0PlC3lYHNhts7-mVqh7nTQrBQeob7N8PC4LkQBW8tNYYPjdN1bm152PWWWkrhA_bV6uiR-XSt1HRKtn9FL7UybBFB2s39H9hT4nARN8wUMTLQxldMAnQNwtqdwr_qzNwC0ldA"/>
+</div>
+<div class="text-center mt-2">
+<h4 class="text-sm font-semibold text-gray-800 hover:text-teal-700 line-clamp-2 min-h-[40px]">Combo Đề kháng cho bé toàn diện</h4>
+<div class="mt-2 flex items-center justify-center gap-2">
+<span class="text-xs text-gray-400 line-through">1.580.000đ</span>
+<span class="text-sm font-bold text-red-600">1.343.000đ</span>
+</div>
+</div>
+</div>
+<!-- Product Combo 2 -->
+<div class="bg-white border border-gray-100 rounded-2xl p-4 flex flex-col justify-between shadow-soft hover:shadow-md transition relative group">
+<span class="absolute top-3 left-3 bg-[#E63946] text-white text-[11px] font-bold px-2 py-0.5 rounded-full">-12%</span>
+<div class="flex justify-center my-4 pt-2">
+<img alt="Combo Xương khớp người lớn" class="w-32 h-32 object-contain group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpfy6RJ3W9ylvYFSo7ums06h1yLrGAvGkFI9ubcmbKyUq62rPeULNnBNPvtaeidcuJZraFHk17PVE3uKoPahWCiOk4Jdc2Tegdhb-wQ_q4fYlSCFH5dueqmLgV43-6fVSJKkFjOvS6b-tsMbP0T_LBytLLkERZrXfuJ-FJiWoCqy7ee7HYNkS3dY24gBp8SgiQVA8rcGAtqC4wKknWvW4YKbDDacbGLJBpyTwTgkiT_rKyH1ezKKyxrw"/>
+</div>
+<div class="text-center mt-2">
+<h4 class="text-sm font-semibold text-gray-800 hover:text-teal-700 line-clamp-2 min-h-[40px]">Combo Xương khớp người lớn tuổi</h4>
+<div class="mt-2 flex items-center justify-center gap-2">
+<span class="text-xs text-gray-400 line-through">2.050.000đ</span>
+<span class="text-sm font-bold text-red-600">1.804.000đ</span>
+</div>
+</div>
+</div>
+<!-- Product Combo 3 -->
+<div class="bg-white border border-gray-100 rounded-2xl p-4 flex flex-col justify-between shadow-soft hover:shadow-md transition relative group">
+<span class="absolute top-3 left-3 bg-[#E63946] text-white text-[11px] font-bold px-2 py-0.5 rounded-full">-10%</span>
+<div class="flex justify-center my-4 pt-2">
+<img alt="Combo Tim mạch chủ động" class="w-32 h-32 object-contain group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZJJvIfdQnnHEVqJYof80Z7zE8tP8uj1TZZ7kazcbbPbAO6gZPPjed2lDG53kPLkpLdFE2EqRrzI9I8OA6ry9KPvsUY7-KccRoPcodn3f-v9TkrWREdf3cMNnuxAG-LOKIDnQOwTZKBm0qeY3pRpTPsef2YFNX_m3Na1i9x4-nbn_OvKIazralDxJ2HbaCw5FWbJhyeghNeLWO7KpD9Fyf7XKL32fEVZgqAUDTzodMwaky6f5OuWMz2A"/>
+</div>
+<div class="text-center mt-2">
+<h4 class="text-sm font-semibold text-gray-800 hover:text-teal-700 line-clamp-2 min-h-[40px]">Combo Tim mạch chủ động người cao tuổi</h4>
+<div class="mt-2 flex items-center justify-center gap-2">
+<span class="text-xs text-gray-400 line-through">1.870.000đ</span>
+<span class="text-sm font-bold text-red-600">1.683.000đ</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation Dots -->
+<div class="flex justify-center items-center gap-1.5 mt-6">
+<span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span>
+<span class="w-2 h-2 rounded-full bg-gray-200"></span>
+<span class="w-2 h-2 rounded-full bg-gray-200"></span>
+</div>
+</div>
+</section>
+<!-- END: PromotionSection -->
+<!-- BEGIN: KidsHealthSection -->
+<section class="py-12 bg-[#F2F8F8] border-t border-b border-teal-100/60" id="giai-phap-be">
+<div class="max-w-6xl mx-auto px-4">
+<!-- Section Header -->
+<div class="text-center max-w-xl mx-auto mb-8">
+<div class="flex items-center justify-center gap-2 mb-1">
+<span class="text-teal-600"><i class="fa-solid fa-leaf"></i></span>
+<h2 class="text-2xl font-bold tracking-tight text-[#0B2545]">GIẢI PHÁP SỨC KHỎE CHO BÉ</h2>
+<span class="text-teal-600"><i class="fa-solid fa-leaf transform scale-x-[-1]"></i></span>
+</div>
+<p class="text-xs text-gray-500">Hỗ trợ khoa học theo từng giai đoạn tăng trưởng của con</p>
+</div>
+<!-- Category Horizontal Cards -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3.5 mb-8">
+<!-- Category 1 -->
+<div class="bg-white rounded-xl p-3 text-center border border-teal-100 shadow-sm hover:border-teal-500 transition cursor-pointer group">
+<h3 class="text-xs font-semibold text-gray-800 leading-tight mb-3">Biếng ăn &amp;<br/>chậm hấp thu</h3>
+<div class="overflow-hidden rounded-lg aspect-square">
+<img alt="Bé ăn ngoan" class="w-full h-full object-cover group-hover:scale-105 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg6MtYbVbZskvbDWfQr3CQQy75-U_-M4iHJAidi9HV-lfWydrRoIGkttrjn8FmhXw4x-dka6iri8OO_NfTzk3nwXQq23FXxjK2NMu6xXcnNXzYisg1pu1gQChxLJHFirMhRpcunEOphj9zAdUjoWZeL0ak4JfXpx1kHEiVvfIcHKsLP9VRWJiQD4D0ba7R1YLt33hHYscoJvqsbpqoCMIi0d7KMla-U1YoVN6yKrW0_H0Lq5vdzGpTew"/>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="bg-white rounded-xl p-3 text-center border border-teal-100 shadow-sm hover:border-teal-500 transition cursor-pointer group">
+<h3 class="text-xs font-semibold text-gray-800 leading-tight mb-3">Tăng<br/>chiều cao</h3>
+<div class="overflow-hidden rounded-lg aspect-square">
+<img alt="Bé phát triển chiều cao" class="w-full h-full object-cover group-hover:scale-105 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEV-3FWJvUD9_NjgykqJZYTt2ldlq7u4CwuCX4ALSb4Z_dz-XyPZxyAzKQFoepPh6p4KZfzJG_rpgeR52xC10PziK-I4ZJjirojgxwxYZGXwkg10YkKW0hI2ISQvTT7vv-SEiz58YCekXsIlS_icpxjQ2g25RKHYRCt0Fc5gVThhiux6KTwJjPAYU05Rxy74XjC5ySskKNLNLywS7oUEkFV2QThsxpgsPD-6Mn3iAa9FTx4Yz9bObb9Q"/>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="bg-white rounded-xl p-3 text-center border border-teal-100 shadow-sm hover:border-teal-500 transition cursor-pointer group">
+<h3 class="text-xs font-semibold text-gray-800 leading-tight mb-3">Tăng<br/>đề kháng</h3>
+<div class="overflow-hidden rounded-lg aspect-square">
+<img alt="Bé đề kháng khỏe" class="w-full h-full object-cover group-hover:scale-105 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRzo2Xv3Up33lN-C2Gj3jMuGj7-cNoJ78Mml1BfRdWrGJ8HP8zLamFADJgVLRFWbqrc5pEF5f_caoMsURP--lvpd1ASM7E64X5Zo5-QjroUeGOLsBe0xxtK1790m7xGT1faspRjpY8SC_szPqzEpcVxuwlca2VbXMGwD7jiBIevU37_9onh-vS4P7Ju5YnRzqtCKcRmDVgslTa_1q1yrQtrgTMo8WEzLttQcI0XA1m7i8su-c3aWWRWQ"/>
+</div>
+</div>
+<!-- Category 4 -->
+<div class="bg-white rounded-xl p-3 text-center border border-teal-100 shadow-sm hover:border-teal-500 transition cursor-pointer group">
+<h3 class="text-xs font-semibold text-gray-800 leading-tight mb-3">Chậm nói •<br/>ADHD • ASD</h3>
+<div class="overflow-hidden rounded-lg aspect-square">
+<img alt="Bé giao tiếp ngôn ngữ" class="w-full h-full object-cover group-hover:scale-105 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC10-vNSAAs7tChST-wRw9x_ol8jPPqFl13fp85PNQIPIdD2qP3kG6RhzSeUXkuF72PaGzpy8wsNXG2om6_VfPoa3QdVEMmGjXvTR-p5HiNFTMAKhMSYnUTHY8Wa-mc5HT47xyCXrbhnEtAzGq9qkVTAZEDtKHqVv3NlBgVZa5NpvuC9SnEn2w0DjS78JO2IsBw0zHX52tDwzqyixTDlFiqHvAv54-oXn29Lb5NyUDjGVKdD3eYwH5Og"/>
+</div>
+</div>
+<!-- Category 5 -->
+<div class="bg-white rounded-xl p-3 text-center border border-teal-100 shadow-sm hover:border-teal-500 transition cursor-pointer group">
+<h3 class="text-xs font-semibold text-gray-800 leading-tight mb-3">Phát triển<br/>trí não</h3>
+<div class="overflow-hidden rounded-lg aspect-square">
+<img alt="Bé thông minh lanh lợi" class="w-full h-full object-cover group-hover:scale-105 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL28JN-Ecaqx6pSTkHQra4Q7XG7G31jymm11rBTYtVZMH3huglEj0qikG4Ecmar9qA2IoOcj12r41Z2zbAjz6HDrJphGbafdVv48a8-HQaAy3wi5ME7AuFSyw59B5CMfY4zSX5K6stCigkQs-LK8zE4--RiPxpEdLWN2wqxBU90HtrW8TDDKW7UWx2skUc7PIOXDudxArwyJMnogo3-npTP4c-g4TDTmxvMb0cFRyoADX6UTZXzZjJ1w"/>
+</div>
+</div>
+</div>
+<!-- Section CTA Button -->
+<div class="text-center">
+<a class="inline-flex items-center gap-2 bg-[#006D77] hover:bg-[#005259] text-white text-xs font-bold px-6 py-2.5 rounded-full transition shadow-sm" href="#">
+<span>XEM TẤT CẢ GIẢI PHÁP CHO BÉ</span>
+<i class="fa-solid fa-arrow-right text-[11px]"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- END: KidsHealthSection -->
+<!-- BEGIN: AdultHealthSection -->
+<section class="py-12 bg-white" id="giai-phap-nguoi-lon">
+<div class="max-w-6xl mx-auto px-4">
+<!-- Section Header -->
+<div class="text-center max-w-xl mx-auto mb-8">
+<div class="flex items-center justify-center gap-2 mb-1">
+<span class="text-teal-600"><i class="fa-solid fa-leaf"></i></span>
+<h2 class="text-2xl font-bold tracking-tight text-[#0B2545]">GIẢI PHÁP SỨC KHỎE CHO NGƯỜI LỚN</h2>
+<span class="text-teal-600"><i class="fa-solid fa-leaf transform scale-x-[-1]"></i></span>
+</div>
+<p class="text-xs text-gray-500">Chăm sóc toàn diện cho bố mẹ và người thân yêu</p>
+</div>
+<!-- Category Grid for Adults -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+<!-- Category 1: Sleep -->
+<div class="bg-gray-50/70 rounded-xl p-3.5 border border-gray-200/70 hover:border-teal-500 transition cursor-pointer group text-center">
+<h3 class="text-xs font-semibold text-gray-800 leading-tight mb-3">Mất ngủ • Khó ngủ •<br/>Hay quên</h3>
+<div class="overflow-hidden rounded-lg aspect-square">
+<img alt="Người lớn ngủ ngon" class="w-full h-full object-cover group-hover:scale-105 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5U56who9cWDbeQso0ktb6Opt-agUkiafWSqjpuOG3X6P8wFqS_1lKW2VK5BIbDYz4iQv-X0qb3h1BMEdWmzB6Uhb5qJAil_VJ6j17LQtvh5Vj0jBde7T0Pm0-_-obOGfCEc-HUAkhI52SL2ffgo_L35zswUwEPs2eC5Bz7KSXfDmb1Z2ffWhhDR2KF3dK9Nm7GulEsFhKHLN9ZGsmU6ZvlDCM3smcbsMcYLIy24ifMnIear4ur1q5xg"/>
+</div>
+</div>
+<!-- Category 2: Joints -->
+<div class="bg-gray-50/70 rounded-xl p-3.5 border border-gray-200/70 hover:border-teal-500 transition cursor-pointer group text-center">
+<h3 class="text-xs font-semibold text-gray-800 leading-tight mb-3">Đau cơ<br/>xương khớp</h3>
+<div class="overflow-hidden rounded-lg aspect-square">
+<img alt="Người lớn khỏe khớp" class="w-full h-full object-cover group-hover:scale-105 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD10qqZ1W1jqTiXdQ0gmu9S9DJ7rB62lBWZnXB70IyPcKUfc_XqgE4LSDccJ8yLxhiZZce1yNeB0vIxkoen2udTcSGoQihwLMhvFwtmTat1W9lkGvKnKOig774O_AD2IsxbvKkh4z3NDrGg69sdGbkoSEd43yLlMWHMU-dywUP6NplbldNCVvBZh99VTXxAOPfchPQa8gnN8G3rCpzumWH-mKK0-Rk76qdKhlKqGmxKFtuE0QDN8MC2fQ"/>
+</div>
+</div>
+<!-- Category 3: Blood Sugar -->
+<div class="bg-gray-50/70 rounded-xl p-3.5 border border-gray-200/70 hover:border-teal-500 transition cursor-pointer group text-center">
+<h3 class="text-xs font-semibold text-gray-800 leading-tight mb-3">Hỗ trợ<br/>đường huyết</h3>
+<div class="overflow-hidden rounded-lg aspect-square">
+<img alt="Kiểm soát đường huyết" class="w-full h-full object-cover group-hover:scale-105 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF3118wCxI4e0ee5Ef7YEukbmBssqIszjcgJZ6wGOvZ1ZZkXWXYv3ZXFvpv66dGwlIm-ePrWkgnJDAAHmmLTvkNnWP0ZwpRpostrhSYzziD8GA4bzIAgjhEjXJLfViaN8lKCks6ZhiucRKZ0mUzr_WmrpgtKBwxKp9XH4FLyO3cEpCdExX_8CQ0Y4f9s7ysiPnVJTwY3kyi1wz7VJGlvR1s17t5nZNje6bt6qVFpy0KUo1zpFdjxym6Q"/>
+</div>
+</div>
+<!-- Category 4: Cardio -->
+<div class="bg-gray-50/70 rounded-xl p-3.5 border border-gray-200/70 hover:border-teal-500 transition cursor-pointer group text-center">
+<h3 class="text-xs font-semibold text-gray-800 leading-tight mb-3">Tim mạch &amp;<br/>huyết áp</h3>
+<div class="overflow-hidden rounded-lg aspect-square">
+<img alt="Người lớn tim mạch khỏe mạnh" class="w-full h-full object-cover group-hover:scale-105 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7gwLD_FQ89cLATtvK_I61obzfDcXM24kClu1iKAxQA5mcbCnbKWeddzgoM5B8jg7UY4mYroUhZEYVek5Jbe_ylysG_W0DLmmCYVpsq7XCaQJoot5CEv9c2759c0Pe_chvzZGlqImQEO68JY_NkGtCuSonESK2JaXTqs0iQGNU2BgsySOcX9OJOhVKoDudrxOKfgD02xZhuEczVzqvo20cKJsEoZze9ZbhjCz7HVMaL3hy-92o1v2EzQ"/>
+</div>
+</div>
+</div>
+<!-- Section CTA Button -->
+<div class="text-center">
+<a class="inline-flex items-center gap-2 bg-[#006D77] hover:bg-[#005259] text-white text-xs font-bold px-6 py-2.5 rounded-full transition shadow-sm" href="#">
+<span>XEM TẤT CẢ GIẢI PHÁP CHO NGƯỜI LỚN</span>
+<i class="fa-solid fa-arrow-right text-[11px]"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- END: AdultHealthSection -->
+<!-- BEGIN: ConsultationFunnelSection -->
+<section class="relative w-full overflow-hidden" id="tu-van">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0">
+<img alt="Tư vấn chuyên nghiệp" class="w-full h-full object-cover object-center" src="assets/assets_2.png"/>
+<div class="absolute inset-0 bg-white/30"></div>
+</div>
+<!-- Content -->
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+<!-- Left: Empty space for background image -->
+<div class="hidden lg:block"></div>
+<!-- Right: Content -->
+<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-xl">
+<div class="space-y-5">
+<div>
+<h2 class="text-2xl sm:text-3xl font-bold text-[#0B2545]">Chưa biết bắt đầu từ đâu?</h2>
+<p class="text-sm text-gray-600 mt-2">Trả lời 5 câu hỏi để được gợi ý lộ trình phù hợp.</p>
+</div>
+<!-- CTA Button -->
+<div>
+<a class="inline-flex items-center gap-2 bg-[#0B2545] hover:bg-[#16385f] text-white text-sm font-bold px-8 py-3.5 rounded-lg transition shadow-md hover:shadow-lg" href="#">
+<span>NHẬN TƯ VẤN</span>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+<!-- Feature Badges -->
+<div class="grid grid-cols-3 gap-4 pt-4 border-t border-gray-200">
+<div class="flex flex-col items-center text-center gap-2">
+<div class="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center text-[#006D77]">
+<i class="fa-regular fa-clock text-xl"></i>
+</div>
+<div class="text-xs text-gray-700 leading-tight">
+<span class="font-bold block">Nhanh chóng</span>
+<span class="text-gray-500">(2 phút)</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-2">
+<div class="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center text-[#006D77]">
+<i class="fa-solid fa-user-gear text-xl"></i>
+</div>
+<div class="text-xs text-gray-700 leading-tight">
+<span class="font-bold block">Cá nhân hóa</span>
+<span class="text-gray-500">theo nhu cầu</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-2">
+<div class="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center text-[#006D77]">
+<i class="fa-solid fa-gift text-xl"></i>
+</div>
+<div class="text-xs text-gray-700 leading-tight">
+<span class="font-bold block">Hoàn toàn</span>
+<span class="text-gray-500">miễn phí</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ConsultationFunnelSection -->
+<!-- BEGIN: PopularProductsSection -->
+<section class="py-12 bg-white">
+<div class="max-w-6xl mx-auto px-4">
+<!-- Header -->
+<div class="text-center max-w-xl mx-auto mb-8">
+<div class="flex items-center justify-center gap-2 mb-1">
+<span class="text-teal-600"><i class="fa-solid fa-leaf"></i></span>
+<h2 class="text-2xl font-bold tracking-tight text-[#0B2545]">SẢN PHẨM ĐƯỢC YÊU THÍCH</h2>
+<span class="text-teal-600"><i class="fa-solid fa-leaf transform scale-x-[-1]"></i></span>
+</div>
+<p class="text-xs text-gray-500">Các dòng bổ sung chuẩn nội địa Mỹ được tin dùng hàng đầu</p>
+</div>
+<!-- Products Carousel / Grid -->
+<div class="grid grid-cols-2 md:grid-cols-6 gap-3.5">
+<!-- Product Item 1 -->
+<div class="bg-white border border-gray-100 rounded-xl p-3 flex flex-col justify-between hover:shadow-md transition relative group">
+<button aria-label="Yêu thích" class="absolute top-2.5 right-2.5 text-gray-300 hover:text-red-500 transition text-sm">
+<i class="fa-regular fa-heart"></i>
+</button>
+<div class="h-28 flex items-center justify-center mb-2">
+<img alt="Nordic Naturals Children's DHA" class="max-h-24 object-contain group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnrot4VWT8pQgBFz3MzNWUlu1R36YeBxlmYwQC65cUYMBEgusYnTqtHb7RWP47b6r1b8SLbfIRlpWJirxNF9-2kVGP6tTocKnUtn34Z9FQTYz1BmujcfsqrW02exe_9-Q5GPx-qS3gA80QyBZIxZN-Y3wSETzKeyQiCjvylIqP9o9E8L2hEqirdNPKyhRpp2BYwBOb98v6BPMD_n0aBlHvBMIuVm3nzxU8E6Wtfi0hNbbey3YJ-_VA_g"/>
+</div>
+<div class="space-y-1">
+<h3 class="text-xs font-medium text-gray-700 line-clamp-2 leading-tight min-h-[32px]">Nordic Naturals Children's DHA</h3>
+<p class="text-xs font-bold text-gray-900">650.000đ</p>
+<div class="flex items-center gap-1 text-[10px] text-amber-500">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<span class="text-gray-400 ml-0.5">(128)</span>
+</div>
+</div>
+</div>
+<!-- Product Item 2 -->
+<div class="bg-white border border-gray-100 rounded-xl p-3 flex flex-col justify-between hover:shadow-md transition relative group">
+<button aria-label="Yêu thích" class="absolute top-2.5 right-2.5 text-gray-300 hover:text-red-500 transition text-sm">
+<i class="fa-regular fa-heart"></i>
+</button>
+<div class="h-28 flex items-center justify-center mb-2">
+<img alt="Culturelle Daily Probiotic" class="max-h-24 object-contain group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRmMoaKrjTNlW1Ojwrrnu_7EE9ysrDZU5K7g8rqQ5Iok0QXHV-zLKeewyDcmv-RwdjsJllo55rUu9FP7kL90pik_4i_S_bfJ7odMB_rdf-9m_6GfEE3CLS9sL6t47Ccyaib3tiSAtWKSjqRCn7qaF5T-m9mJ-4EvA6xjqXHOumRKSOqjXMD1ypzVyv34q1vQWjA1W4LvMxL40qxZqXOSe_-X4f_OL16gY7zD8DnmWhdukk3QFRP0lKVQ"/>
+</div>
+<div class="space-y-1">
+<h3 class="text-xs font-medium text-gray-700 line-clamp-2 leading-tight min-h-[32px]">Culturelle® Daily Probiotic</h3>
+<p class="text-xs font-bold text-gray-900">620.000đ</p>
+<div class="flex items-center gap-1 text-[10px] text-amber-500">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<span class="text-gray-400 ml-0.5">(97)</span>
+</div>
+</div>
+</div>
+<!-- Product Item 3 -->
+<div class="bg-white border border-gray-100 rounded-xl p-3 flex flex-col justify-between hover:shadow-md transition relative group">
+<button aria-label="Yêu thích" class="absolute top-2.5 right-2.5 text-gray-300 hover:text-red-500 transition text-sm">
+<i class="fa-regular fa-heart"></i>
+</button>
+<div class="h-28 flex items-center justify-center mb-2">
+<img alt="Nature's Way Alive! Kids Multi" class="max-h-24 object-contain group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP86Q6v310mL_bXL99mXHLWUhO_AUJ_WEMCIN4AvShjpLmkbtYYU9CjEaAN2-E82ahDhF_awknrZvo-H5vDG1BEl1pnUnwnpERGl1QSNI1aXdZkbqyeGlPRU4RkRRtCgyPiE6UXBeJGQfH-al5g5-6MuOSoT7-dFUYBzRZejlw3lDTXNENEkGFiY1XwQ91wYlx0_NTgdYQhQ2lfBJtA4BphOl0FkYysNXpk7KRF465KhegTHsOaL4_tw"/>
+</div>
+<div class="space-y-1">
+<h3 class="text-xs font-medium text-gray-700 line-clamp-2 leading-tight min-h-[32px]">Nature's Way Alive! Kids Multi</h3>
+<p class="text-xs font-bold text-gray-900">580.000đ</p>
+<div class="flex items-center gap-1 text-[10px] text-amber-500">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<span class="text-gray-400 ml-0.5">(86)</span>
+</div>
+</div>
+</div>
+<!-- Product Item 4 -->
+<div class="bg-white border border-gray-100 rounded-xl p-3 flex flex-col justify-between hover:shadow-md transition relative group">
+<button aria-label="Yêu thích" class="absolute top-2.5 right-2.5 text-gray-300 hover:text-red-500 transition text-sm">
+<i class="fa-regular fa-heart"></i>
+</button>
+<div class="h-28 flex items-center justify-center mb-2">
+<img alt="California Gold Nutrition Vitamin D3 125mcg" class="max-h-24 object-contain group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX1Q8nc1Est5nMfDi9UJN3799rJSxFhdhh-TCzdCs8bv2N8hRKvbLTP5KLfdH1NsOo54AlEt5woT2Kr2O-ZMIlzeOkv95uIo1l6a3DLwsfJG3MakOaGYupl7jnc0E6Ugp1yQFKGCGRRrvvcc0EjALkb1VMJs8vc5svSIQ1AhJ-VdY-FDN8rv5NrGw_brIzKZEC_ZLSbOYnUx4WSNH3iU72XReFihxPYJZ8j0jEX5Sfa8aeGAbhEBb_dA"/>
+</div>
+<div class="space-y-1">
+<h3 class="text-xs font-medium text-gray-700 line-clamp-2 leading-tight min-h-[32px]">California Gold Nutrition Vitamin D3</h3>
+<p class="text-xs font-bold text-gray-900">220.000đ</p>
+<div class="flex items-center gap-1 text-[10px] text-amber-500">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<span class="text-gray-400 ml-0.5">(75)</span>
+</div>
+</div>
+</div>
+<!-- Product Item 5 -->
+<div class="bg-white border border-gray-100 rounded-xl p-3 flex flex-col justify-between hover:shadow-md transition relative group">
+<button aria-label="Yêu thích" class="absolute top-2.5 right-2.5 text-gray-300 hover:text-red-500 transition text-sm">
+<i class="fa-regular fa-heart"></i>
+</button>
+<div class="h-28 flex items-center justify-center mb-2">
+<img alt="Natrol Melatonin 5mg" class="max-h-24 object-contain group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZI2Q61j5a1ERXZ-SmiPOrzJ5L_q0X4blMqv3pzoAb64LEOpOt7dmY_XH3ukQpJJpraoFTKeRppo1MJSN4mDV91QcZR3YLh3ne8-FxMxvqViV0wpGrhPrXZ05wFB5whDsE4xRsV0yzIRXxbHXOmpJ5V9szNiQXxG7b4nL7--X9Pc5MEPG42UZqkfe4wwifFs2isQfU5vVvtDU3O-dLmE6Cbc1gd4PMg3n1M1OLos3RGy2ymqYXXVxl6g"/>
+</div>
+<div class="space-y-1">
+<h3 class="text-xs font-medium text-gray-700 line-clamp-2 leading-tight min-h-[32px]">Natrol Melatonin 5mg Hỗ Trợ Ngủ Ngon</h3>
+<p class="text-xs font-bold text-gray-900">310.000đ</p>
+<div class="flex items-center gap-1 text-[10px] text-amber-500">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<span class="text-gray-400 ml-0.5">(132)</span>
+</div>
+</div>
+</div>
+<!-- Product Item 6 -->
+<div class="bg-white border border-gray-100 rounded-xl p-3 flex flex-col justify-between hover:shadow-md transition relative group">
+<button aria-label="Yêu thích" class="absolute top-2.5 right-2.5 text-gray-300 hover:text-red-500 transition text-sm">
+<i class="fa-regular fa-heart"></i>
+</button>
+<div class="h-28 flex items-center justify-center mb-2">
+<img alt="Move Free Advanced Plus MSM" class="max-h-24 object-contain group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxQjIkYzWo2NCXT690rix-d25Hx-eJeklumhL0zoLNf4p6Ic0KTYyFnXsaQtC4tWf-lGI3zMcr4HH3xZSYSuxem-mwOvlD9uiRZQj4MlD1kuVLXe-1vX97dR5f7oQLc-b8OejM1Jb_jeM4AYoXAhEo1L4tVnwx92J4oHYmwHlwjOwDqPJPuQNOjDZL_LKpb_hjrNjOXUBNXG1VjPBgkWrwBsStuvYmkh3NgPQO60odBYYF5pZui53c9Q"/>
+</div>
+<div class="space-y-1">
+<h3 class="text-xs font-medium text-gray-700 line-clamp-2 leading-tight min-h-[32px]">Move Free Advanced Plus MSM Xương Khớp</h3>
+<p class="text-xs font-bold text-gray-900">980.000đ</p>
+<div class="flex items-center gap-1 text-[10px] text-amber-500">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<span class="text-gray-400 ml-0.5">(119)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: PopularProductsSection -->
+<!-- BEGIN: CommitmentsSection -->
+<section class="py-10 bg-white border-t border-gray-100">
+<div class="max-w-6xl mx-auto px-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Commitment 1 -->
+<div class="flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-full bg-teal-50 flex items-center justify-center text-teal-700 shrink-0 text-base">
+<i class="fa-solid fa-certificate"></i>
+</div>
+<div>
+<h3 class="text-sm font-bold text-gray-800 leading-snug">Hàng Mỹ chính hãng</h3>
+<p class="text-xs text-gray-500 mt-0.5">Nguồn gốc rõ ràng, đầy đủ chứng từ hóa đơn.</p>
+</div>
+</div>
+<!-- Commitment 2 -->
+<div class="flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-full bg-teal-50 flex items-center justify-center text-teal-700 shrink-0 text-base">
+<i class="fa-solid fa-user-doctor"></i>
+</div>
+<div>
+<h3 class="text-sm font-bold text-gray-800 leading-snug">Tư vấn theo độ tuổi &amp; nhu cầu</h3>
+<p class="text-xs text-gray-500 mt-0.5">Không bán theo sản phẩm, mà theo vấn đề.</p>
+</div>
+</div>
+<!-- Commitment 3 -->
+<div class="flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-full bg-teal-50 flex items-center justify-center text-teal-700 shrink-0 text-base">
+<i class="fa-solid fa-flask-vial"></i>
+</div>
+<div>
+<h3 class="text-sm font-bold text-gray-800 leading-snug">Minh bạch thành phần</h3>
+<p class="text-xs text-gray-500 mt-0.5">Công khai thành phần, hàm lượng, xuất xứ.</p>
+</div>
+</div>
+<!-- Commitment 4 -->
+<div class="flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-full bg-teal-50 flex items-center justify-center text-teal-700 shrink-0 text-base">
+<i class="fa-solid fa-heart-circle-check"></i>
+</div>
+<div>
+<h3 class="text-sm font-bold text-gray-800 leading-snug">Không bán theo phong trào</h3>
+<p class="text-xs text-gray-500 mt-0.5">Chỉ gợi ý giải pháp phù hợp, không chạy theo xu hướng.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CommitmentsSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-[#0B2545] text-white pt-12 pb-6 border-t border-teal-900">
+<div class="max-w-6xl mx-auto px-4">
+<!-- Top Columns -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-gray-700/60">
+<!-- Brand Info -->
+<div class="md:col-span-3 space-y-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-rose-500/20 flex items-center justify-center text-rose-400">
+<i class="fa-solid fa-person-breastfeeding text-sm"></i>
+</div>
+<span class="text-lg font-bold tracking-tight text-white">SHOP MẸ BÉ PI</span>
+</div>
+<p class="text-xs text-gray-300 leading-relaxed">
+            Đồng hành cùng mẹ chăm sóc cả nhà với giải pháp khoa học, an tâm và phù hợp nhất.
+          </p>
+<div class="flex items-center gap-3 pt-2">
+<a aria-label="Tiktok" class="w-7 h-7 rounded-full bg-gray-800 hover:bg-teal-600 flex items-center justify-center text-xs text-gray-300 hover:text-white transition" href="#"><i class="fa-brands fa-tiktok"></i></a>
+<a aria-label="Facebook" class="w-7 h-7 rounded-full bg-gray-800 hover:bg-teal-600 flex items-center justify-center text-xs text-gray-300 hover:text-white transition" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a aria-label="Instagram" class="w-7 h-7 rounded-full bg-gray-800 hover:bg-teal-600 flex items-center justify-center text-xs text-gray-300 hover:text-white transition" href="#"><i class="fa-brands fa-instagram"></i></a>
+<a aria-label="Youtube" class="w-7 h-7 rounded-full bg-gray-800 hover:bg-teal-600 flex items-center justify-center text-xs text-gray-300 hover:text-white transition" href="#"><i class="fa-brands fa-youtube"></i></a>
+</div>
+</div>
+<!-- Col 1: Về chúng tôi -->
+<div class="md:col-span-2 space-y-2.5">
+<h4 class="text-xs font-bold uppercase tracking-wider text-teal-300">Về chúng tôi</h4>
+<ul class="space-y-1.5 text-xs text-gray-300">
+<li><a class="hover:text-white transition" href="#">Giới thiệu</a></li>
+<li><a class="hover:text-white transition" href="#">Cam kết của chúng tôi</a></li>
+<li><a class="hover:text-white transition" href="#">Chính sách đổi trả</a></li>
+<li><a class="hover:text-white transition" href="#">Chính sách bảo mật</a></li>
+<li><a class="hover:text-white transition" href="#">Tuyển dụng</a></li>
+</ul>
+</div>
+<!-- Col 2: Hỗ trợ khách hàng -->
+<div class="md:col-span-2 space-y-2.5">
+<h4 class="text-xs font-bold uppercase tracking-wider text-teal-300">Hỗ trợ khách hàng</h4>
+<ul class="space-y-1.5 text-xs text-gray-300">
+<li><a class="hover:text-white transition" href="#">Hướng dẫn mua hàng</a></li>
+<li><a class="hover:text-white transition" href="#">Chính sách thanh toán</a></li>
+<li><a class="hover:text-white transition" href="#">Chính sách giao hàng</a></li>
+<li><a class="hover:text-white transition" href="#">Câu hỏi thường gặp</a></li>
+<li><a class="hover:text-white transition" href="#">Liên hệ</a></li>
+</ul>
+</div>
+<!-- Col 3: Kết nối với Mẹ Pi -->
+<div class="md:col-span-2 space-y-2.5">
+<h4 class="text-xs font-bold uppercase tracking-wider text-teal-300">Kết nối với Mẹ Pi</h4>
+<ul class="space-y-1.5 text-xs text-gray-300">
+<li class="flex items-center gap-1.5">
+<i class="fa-solid fa-headset text-teal-400"></i>
+<span>Tư vấn miễn phí</span>
+</li>
+<li class="flex items-center gap-1.5">
+<i class="fa-solid fa-phone text-teal-400"></i>
+<span class="font-bold text-white">0981 123 456</span>
+</li>
+<li class="flex items-center gap-1.5">
+<i class="fa-solid fa-envelope text-teal-400"></i>
+<span class="text-[11px]">tuvanmeppi@gmail.com</span>
+</li>
+<li class="flex items-center gap-1.5 text-[11px] text-gray-400">
+<i class="fa-regular fa-clock text-teal-400"></i>
+<span>Thứ 2 – Chủ nhật: 8:00 – 21:00</span>
+</li>
+</ul>
+</div>
+<!-- Col 4: Newsletter -->
+<div class="md:col-span-3 space-y-3">
+<h4 class="text-xs font-bold uppercase tracking-wider text-teal-300">Đăng ký nhận tin</h4>
+<p class="text-xs text-gray-300 leading-snug">
+            Nhận thông tin giải pháp sức khỏe và ưu đãi dành riêng cho bạn.
+          </p>
+<form class="relative flex items-center" onsubmit="event.preventDefault();">
+<input class="w-full text-xs py-2 pl-3 pr-9 bg-gray-800/80 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400" placeholder="Nhập email của bạn" type="email"/>
+<button aria-label="Gửi email" class="absolute right-2 text-teal-400 hover:text-white" type="submit">
+<i class="fa-solid fa-arrow-right text-xs"></i>
+</button>
+</form>
+<!-- Badges -->
+<div class="flex items-center gap-3 pt-2">
+<div class="border border-teal-500/40 rounded px-2 py-0.5 text-[10px] text-teal-300 flex items-center gap-1 bg-teal-950/40">
+<i class="fa-solid fa-shield-halved"></i>
+<span>ĐÃ THÔNG BÁO BỘ CÔNG THƯƠNG</span>
+</div>
+<div class="border border-gray-600 rounded px-2 py-0.5 text-[10px] text-gray-300 bg-gray-800">
+<span>DMCA PROTECTED</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Copyright Bottom Bar -->
+<div class="pt-6 text-center text-xs text-gray-400">
+<p>© 2024 SHOP MẸ BÉ PI. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>
+
+<!-- Load header component -->
+<script src="js/load-header.js"></script>
+</body>
+</html>
