@@ -6,6 +6,8 @@
 <title>SHOP MẸ BÉ PI - Dinh dưỡng đúng nhu cầu, chăm sóc cả gia đình</title>
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Lucide Icons CDN -->
+<script src="https://unpkg.com/lucide@latest"></script>
 <!-- Google Fonts: Be Vietnam Pro -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -129,89 +131,105 @@ Dinh dưỡng đúng nhu cầu –<br/>
 </section>
 <!-- END: HeroSection -->
 <!-- BEGIN: PromotionSection -->
-<section class="py-12 bg-white" id="khuyen-mai">
-<div class="max-w-6xl mx-auto px-4">
-<!-- Promotion Header -->
-<div class="flex items-center justify-between mb-8 pb-3 border-b border-gray-100">
-<div>
-<div class="flex items-center gap-2">
-<span class="text-rose-500 text-lg"><i class="fa-solid fa-feather-pointed"></i></span>
-<h2 class="text-2xl font-bold tracking-tight text-gray-900">KHUYẾN MÃI</h2>
-<span class="text-rose-500 text-lg"><i class="fa-solid fa-feather-pointed transform rotate-180"></i></span>
+<section class="relative w-full overflow-hidden py-16" id="khuyen-mai">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Background khuyến mãi" class="w-full h-full object-contain object-center" src="assets/assets_3.png"/>
+<div class="absolute inset-0 bg-white/10"></div>
 </div>
-<p class="text-base font-medium text-gray-800 mt-1">Ưu đãi nổi bật hôm nay</p>
-<p class="text-xs text-gray-500">Combo đúng nhu cầu – Tiết kiệm hơn</p>
+
+<!-- Content -->
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row gap-8 items-center">
+<!-- Left Side: Header + Button + Decorative Image -->
+<div class="w-full lg:w-[35%] flex flex-col justify-center space-y-6">
+<!-- Header -->
+<div class="text-left">
+<div class="flex items-center gap-3 mb-3">
+<i class="fa-solid fa-gift text-4xl text-rose-500"></i>
+<h2 class="text-4xl font-extrabold text-rose-600 uppercase tracking-wide">KHUYẾN MÃI</h2>
+<i class="fa-solid fa-gift text-4xl text-rose-500"></i>
 </div>
-<a class="inline-flex items-center gap-2 bg-[#E25C38] hover:bg-[#cd4a27] text-white text-xs font-semibold px-4 py-2 rounded-full transition shadow-sm" href="#">
+<p class="text-xl font-bold text-gray-800 mt-3">Ưu đãi nổi bật hôm nay</p>
+<p class="text-sm text-gray-700 mt-1">Combo đúng nhu cầu – Tiết kiệm hơn</p>
+</div>
+
+<!-- Button -->
+<div class="text-left">
+<a class="inline-flex items-center gap-2 bg-rose-600 hover:bg-rose-700 text-white font-bold px-8 py-3.5 rounded-lg shadow-lg transition text-sm" href="promotion.html">
 <span>XEM TẤT CẢ ƯU ĐÃI</span>
-<i class="fa-solid fa-arrow-right text-[11px]"></i>
+<i class="fa-solid fa-arrow-right"></i>
 </a>
 </div>
-<!-- Deals Showcase Cards -->
-<div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-stretch">
-<!-- Banner Card Highlight -->
-<div class="bg-gradient-to-br from-[#FFF5EE] to-[#FFEFEA] border border-orange-200/60 rounded-2xl p-5 flex flex-col justify-between items-center text-center relative overflow-hidden">
-<div class="space-y-2">
-<span class="inline-block bg-orange-100 text-orange-700 text-[11px] font-bold px-2.5 py-0.5 rounded-full">QUÀ TẶNG KÈM</span>
-<h3 class="text-base font-bold text-gray-800 leading-snug">Hộp Quà Dinh Dưỡng Cao Cấp</h3>
-</div>
-<div class="my-4">
-<img alt="Hộp quà khuyến mãi" class="w-36 h-36 object-cover rounded-xl shadow-sm border border-orange-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTd6Dcq_829xVwg4OUFgt7gYoYO69f9eMw-GKZZF097MQEY5LJXppplkNfuFQO1cQvJ_bQhTBw5x6luRF9LPBVZ3Hm-CR7uACJqdEslU0hupXKyRKkQlaXz5fWlUG8G4fZk4zjzhJSVZLlIzp4m1S7-U0YziJbteOZvmHEPTIRiSo7VoTj_rWLWTzOOxi1jt17W-icUu_9U-TumzRH_jniEq1R6lzdSV9Ssk_yNDozPDTeHlmQCrtLhg"/>
-</div>
-<div class="w-full">
-<p class="text-[12px] text-gray-600">Áp dụng cho mọi đơn combo trên 1.500.000đ</p>
+
+<!-- Decorative Gift Image Placeholder -->
+<div class="hidden lg:block">
+<div class="relative w-48 h-48">
+<div class="absolute inset-0 bg-gradient-to-br from-orange-100 to-amber-50 rounded-2xl opacity-50"></div>
 </div>
 </div>
-<!-- Product Combo 1 -->
-<div class="bg-white border border-gray-100 rounded-2xl p-4 flex flex-col justify-between shadow-soft hover:shadow-md transition relative group">
-<span class="absolute top-3 left-3 bg-[#E63946] text-white text-[11px] font-bold px-2 py-0.5 rounded-full">-15%</span>
-<div class="flex justify-center my-4 pt-2">
-<img alt="Combo Đề kháng cho bé" class="w-32 h-32 object-contain group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxXVyjDlEWKx0tz7LMaEAghsVzLlmvraAkxtVXqJ8MzbK-a43YbgdXOzxXtztpanCgROHzK_BgaDWPSb1EO39Je-C-yr30KCqqQwRlEsASR3bL1ImJs0PlC3lYHNhts7-mVqh7nTQrBQeob7N8PC4LkQBW8tNYYPjdN1bm152PWWWkrhA_bV6uiR-XSt1HRKtn9FL7UybBFB2s39H9hT4nARN8wUMTLQxldMAnQNwtqdwr_qzNwC0ldA"/>
 </div>
-<div class="text-center mt-2">
-<h4 class="text-sm font-semibold text-gray-800 hover:text-teal-700 line-clamp-2 min-h-[40px]">Combo Đề kháng cho bé toàn diện</h4>
-<div class="mt-2 flex items-center justify-center gap-2">
+
+<!-- Right Side: Product Cards Grid -->
+<div class="w-full lg:w-[65%]">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all p-4 border-2 border-transparent hover:border-rose-400">
+<div class="relative">
+<span class="absolute top-0 left-0 bg-rose-500 text-white text-xs font-bold px-2 py-1 rounded-br-lg rounded-tl-lg">-15%</span>
+<div class="pt-6 pb-2 flex justify-center">
+<img alt="Combo Đề kháng cho bé" class="h-36 w-auto object-contain hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxXVyjDlEWKx0tz7LMaEAghsVzLlmvraAkxtVXqJ8MzbK-a43YbgdXOzxXtztpanCgROHzK_BgaDWPSb1EO39Je-C-yr30KCqqQwRlEsASR3bL1ImJs0PlC3lYHNhts7-mVqh7nTQrBQeob7N8PC4LkQBW8tNYYPjdN1bm152PWWWkrhA_bV6uiR-XSt1HRKtn9FL7UybBFB2s39H9hT4nARN8wUMTLQxldMAnQNwtqdwr_qzNwC0ldA"/>
+</div>
+</div>
+<div class="text-center mt-2 space-y-1">
+<h3 class="text-sm font-bold text-gray-900">Combo Đề kháng cho bé</h3>
+<p class="text-xs text-gray-600">Tiết kiệm hơn khi mua theo combo</p>
+<div class="flex items-center justify-center gap-2 mt-2">
 <span class="text-xs text-gray-400 line-through">1.580.000đ</span>
-<span class="text-sm font-bold text-red-600">1.343.000đ</span>
+<span class="text-lg font-extrabold text-rose-600">1.343.000đ</span>
 </div>
 </div>
 </div>
-<!-- Product Combo 2 -->
-<div class="bg-white border border-gray-100 rounded-2xl p-4 flex flex-col justify-between shadow-soft hover:shadow-md transition relative group">
-<span class="absolute top-3 left-3 bg-[#E63946] text-white text-[11px] font-bold px-2 py-0.5 rounded-full">-12%</span>
-<div class="flex justify-center my-4 pt-2">
-<img alt="Combo Xương khớp người lớn" class="w-32 h-32 object-contain group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpfy6RJ3W9ylvYFSo7ums06h1yLrGAvGkFI9ubcmbKyUq62rPeULNnBNPvtaeidcuJZraFHk17PVE3uKoPahWCiOk4Jdc2Tegdhb-wQ_q4fYlSCFH5dueqmLgV43-6fVSJKkFjOvS6b-tsMbP0T_LBytLLkERZrXfuJ-FJiWoCqy7ee7HYNkS3dY24gBp8SgiQVA8rcGAtqC4wKknWvW4YKbDDacbGLJBpyTwTgkiT_rKyH1ezKKyxrw"/>
+
+<div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all p-4 border-2 border-transparent hover:border-rose-400">
+<div class="relative">
+<span class="absolute top-0 left-0 bg-rose-500 text-white text-xs font-bold px-2 py-1 rounded-br-lg rounded-tl-lg">-12%</span>
+<div class="pt-6 pb-2 flex justify-center">
+<img alt="Combo Xương khớp người lớn" class="h-36 w-auto object-contain hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpfy6RJ3W9ylvYFSo7ums06h1yLrGAvGkFI9ubcmbKyUq62rPeULNnBNPvtaeidcuJZraFHk17PVE3uKoPahWCiOk4Jdc2Tegdhb-wQ_q4fYlSCFH5dueqmLgV43-6fVSJKkFjOvS6b-tsMbP0T_LBytLLkERZrXfuJ-FJiWoCqy7ee7HYNkS3dY24gBp8SgiQVA8rcGAtqC4wKknWvW4YKbDDacbGLJBpyTwTgkiT_rKyH1ezKKyxrw"/>
 </div>
-<div class="text-center mt-2">
-<h4 class="text-sm font-semibold text-gray-800 hover:text-teal-700 line-clamp-2 min-h-[40px]">Combo Xương khớp người lớn tuổi</h4>
-<div class="mt-2 flex items-center justify-center gap-2">
+</div>
+<div class="text-center mt-2 space-y-1">
+<h3 class="text-sm font-bold text-gray-900">Combo Xương khớp người lớn</h3>
+<p class="text-xs text-gray-600">Tiết kiệm hơn khi mua theo combo</p>
+<div class="flex items-center justify-center gap-2 mt-2">
 <span class="text-xs text-gray-400 line-through">2.050.000đ</span>
-<span class="text-sm font-bold text-red-600">1.804.000đ</span>
+<span class="text-lg font-extrabold text-rose-600">1.804.000đ</span>
 </div>
 </div>
 </div>
-<!-- Product Combo 3 -->
-<div class="bg-white border border-gray-100 rounded-2xl p-4 flex flex-col justify-between shadow-soft hover:shadow-md transition relative group">
-<span class="absolute top-3 left-3 bg-[#E63946] text-white text-[11px] font-bold px-2 py-0.5 rounded-full">-10%</span>
-<div class="flex justify-center my-4 pt-2">
-<img alt="Combo Tim mạch chủ động" class="w-32 h-32 object-contain group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZJJvIfdQnnHEVqJYof80Z7zE8tP8uj1TZZ7kazcbbPbAO6gZPPjed2lDG53kPLkpLdFE2EqRrzI9I8OA6ry9KPvsUY7-KccRoPcodn3f-v9TkrWREdf3cMNnuxAG-LOKIDnQOwTZKBm0qeY3pRpTPsef2YFNX_m3Na1i9x4-nbn_OvKIazralDxJ2HbaCw5FWbJhyeghNeLWO7KpD9Fyf7XKL32fEVZgqAUDTzodMwaky6f5OuWMz2A"/>
+
+<!-- Card 3: Combo Tim mạch -->
+<div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all p-4 border-2 border-transparent hover:border-rose-400">
+<div class="relative">
+<span class="absolute top-0 left-0 bg-rose-500 text-white text-xs font-bold px-2 py-1 rounded-br-lg rounded-tl-lg">-10%</span>
+<div class="pt-6 pb-2 flex justify-center">
+<img alt="Combo Tim mạch chủ động" class="h-48 w-auto object-contain hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZJJvIfdQnnHEVqJYof80Z7zE8tP8uj1TZZ7kazcbbPbAO6gZPPjed2lDG53kPLkpLdFE2EqRrzI9I8OA6ry9KPvsUY7-KccRoPcodn3f-v9TkrWREdf3cMNnuxAG-LOKIDnQOwTZKBm0qeY3pRpTPsef2YFNX_m3Na1i9x4-nbn_OvKIazralDxJ2HbaCw5FWbJhyeghNeLWO7KpD9Fyf7XKL32fEVZgqAUDTzodMwaky6f5OuWMz2A"/>
 </div>
-<div class="text-center mt-2">
-<h4 class="text-sm font-semibold text-gray-800 hover:text-teal-700 line-clamp-2 min-h-[40px]">Combo Tim mạch chủ động người cao tuổi</h4>
-<div class="mt-2 flex items-center justify-center gap-2">
+</div>
+<div class="text-center mt-2 space-y-1">
+<h3 class="text-sm font-bold text-gray-900">Combo Tim mạch chủ động</h3>
+<p class="text-xs text-gray-600">Tiết kiệm hơn khi mua theo combo</p>
+<div class="flex items-center justify-center gap-2 mt-2">
 <span class="text-xs text-gray-400 line-through">1.870.000đ</span>
-<span class="text-sm font-bold text-red-600">1.683.000đ</span>
+<span class="text-lg font-extrabold text-rose-600">1.683.000đ</span>
 </div>
 </div>
 </div>
 </div>
-<!-- Navigation Dots -->
-<div class="flex justify-center items-center gap-1.5 mt-6">
-<span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span>
-<span class="w-2 h-2 rounded-full bg-gray-200"></span>
-<span class="w-2 h-2 rounded-full bg-gray-200"></span>
 </div>
 </div>
+</div>
+</section>
+<!-- END: PromotionSection -->
 </section>
 <!-- END: PromotionSection -->
 <!-- BEGIN: KidsHealthSection -->
